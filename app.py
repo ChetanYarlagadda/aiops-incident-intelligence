@@ -1,4 +1,4 @@
-# app.py
+# app.py (Demo-mode enabled)
 from __future__ import annotations
 
 from pathlib import Path
@@ -7,12 +7,18 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 # -------------------------
-# CONFIG: update ONLY if your project path is different
+# PATHS (demo-aware)
 # -------------------------
 PROJ = Path(__file__).resolve().parent
 
 REPORTS = PROJ / "outputs" / "reports"
 PROC = PROJ / "data" / "processed"
+
+DEMO = PROJ / "demo_data"
+USE_DEMO = DEMO.exists() and any(DEMO.glob("hybrid_eval_v2_*.csv"))
+
+BASE_REPORTS = DEMO if USE_DEMO else REPORTS
+BASE_DATA = DEMO if USE_DEMO else PROC
 
 # -------------------------
 # Streamlit page settings
@@ -20,16 +26,22 @@ PROC = PROJ / "data" / "processed"
 st.set_page_config(page_title="AIOps Incident Intelligence", layout="wide")
 st.title("AIOps Incident Intelligence Dashboard")
 
+if USE_DEMO:
+    st.info("Running in DEMO mode (reading artifacts from demo_data/).")
+else:
+    st.caption("Running in LOCAL mode (reading artifacts from outputs/ and data/).")
+
+
 # -------------------------
 # Helpers
 # -------------------------
 def list_days() -> list[str]:
-    files = sorted(REPORTS.glob("hybrid_eval_v2_*.csv"))
+    files = sorted(BASE_REPORTS.glob("hybrid_eval_v2_*.csv"))
     return [f.stem.replace("hybrid_eval_v2_", "") for f in files]
 
 
 def load_hybrid(day: str) -> pd.DataFrame:
-    p = REPORTS / f"hybrid_eval_v2_{day}.csv"
+    p = BASE_REPORTS / f"hybrid_eval_v2_{day}.csv"
     df = pd.read_csv(p, parse_dates=["event_start", "event_end", "metric_incident_start"])
     # normalize strings
     for c in ["fault_description", "name", "container", "metric_matched_entity", "trace_top_services_peakz"]:
@@ -39,8 +51,30 @@ def load_hybrid(day: str) -> pd.DataFrame:
     return df
 
 
+def load_incidents(day: str) -> pd.DataFrame | None:
+    p = BASE_REPORTS / f"incidents_allkpis_{day}.csv"
+    if not p.exists():
+        return None
+    df = pd.read_csv(p, parse_dates=["incident_start", "incident_end"])
+    df["entity"] = df["entity"].astype(str).str.strip()
+    return df
+
+
+def load_incident_contrib(day: str) -> pd.DataFrame | None:
+    p = BASE_REPORTS / f"incident_contrib_allkpis_{day}.csv"
+    if not p.exists():
+        return None
+    df = pd.read_csv(p)
+    if "incident_id" in df.columns:
+        df["incident_id"] = pd.to_numeric(df["incident_id"], errors="coerce")
+    df["entity"] = df["entity"].astype(str).str.strip()
+    df["kpi"] = df["kpi"].astype(str).str.strip()
+    df["peak_abs_z"] = pd.to_numeric(df["peak_abs_z"], errors="coerce")
+    return df.dropna(subset=["entity", "kpi", "peak_abs_z"])
+
+
 def load_trace(day: str) -> pd.DataFrame | None:
-    p = PROC / f"day_{day}_trace_kpis.parquet"
+    p = BASE_DATA / f"day_{day}_trace_kpis.parquet"
     if not p.exists():
         return None
     df = pd.read_parquet(p)
@@ -48,12 +82,11 @@ def load_trace(day: str) -> pd.DataFrame | None:
     df["entity"] = df["entity"].astype(str).str.strip()
     df["kpi"] = df["kpi"].astype(str).str.strip()
     df["value"] = pd.to_numeric(df["value"], errors="coerce")
-    df = df.dropna(subset=["timestamp", "entity", "kpi", "value"])
-    return df
+    return df.dropna(subset=["timestamp", "entity", "kpi", "value"])
 
 
 def load_metrics(day: str) -> pd.DataFrame | None:
-    p = PROC / f"day_{day}_metrics.parquet"
+    p = BASE_DATA / f"day_{day}_metrics.parquet"
     if not p.exists():
         return None
     df = pd.read_parquet(p)
@@ -120,29 +153,6 @@ def plot_metric_overlay(metrics: pd.DataFrame, entity: str, kpi: str, ev_s, ev_e
     plt.close()
 
 
-# ---- Root cause helpers ----
-def load_incidents(day: str) -> pd.DataFrame | None:
-    p = REPORTS / f"incidents_allkpis_{day}.csv"
-    if not p.exists():
-        return None
-    df = pd.read_csv(p, parse_dates=["incident_start", "incident_end"])
-    df["entity"] = df["entity"].astype(str).str.strip()
-    return df
-
-
-def load_incident_contrib(day: str) -> pd.DataFrame | None:
-    p = REPORTS / f"incident_contrib_allkpis_{day}.csv"
-    if not p.exists():
-        return None
-    df = pd.read_csv(p)
-    if "incident_id" in df.columns:
-        df["incident_id"] = pd.to_numeric(df["incident_id"], errors="coerce")
-    df["entity"] = df["entity"].astype(str).str.strip()
-    df["kpi"] = df["kpi"].astype(str).str.strip()
-    df["peak_abs_z"] = pd.to_numeric(df["peak_abs_z"], errors="coerce")
-    return df.dropna(subset=["entity", "kpi", "peak_abs_z"])
-
-
 def find_overlapping_incident_id(inc: pd.DataFrame, entity: str, ev_s, ev_e):
     if inc is None or len(inc) == 0:
         return None
@@ -165,7 +175,8 @@ def get_metric_root_cause_hints(contrib: pd.DataFrame, entity: str, incident_id=
     if len(sub) == 0:
         return []
     top = (sub.groupby("kpi")["peak_abs_z"].max()
-           .sort_values(ascending=False).head(topn))
+           .sort_values(ascending=False)
+           .head(topn))
     return [(k, float(v)) for k, v in top.items()]
 
 
@@ -174,7 +185,7 @@ def get_metric_root_cause_hints(contrib: pd.DataFrame, entity: str, incident_id=
 # -------------------------
 days = list_days()
 if not days:
-    st.error("No hybrid_eval_v2_*.csv files found in outputs/reports. Run your batch pipeline first.")
+    st.error("No hybrid_eval_v2_*.csv found. For Streamlit Cloud, add demo_data/ with hybrid_eval_v2_*.csv.")
     st.stop()
 
 day = st.sidebar.selectbox("Select day", days, index=0)
@@ -243,7 +254,6 @@ st.write(
 # Root Cause Hints Panel
 # -------------------------
 st.subheader("Root Cause Hints")
-
 inc = load_incidents(day)
 contrib = load_incident_contrib(day)
 
@@ -262,7 +272,6 @@ trace_hint_raw = str(row.get("trace_top_services_peakz", "")).strip()
 trace_services = parse_top_services(trace_hint_raw, topn=5)
 
 cA, cB = st.columns(2)
-
 with cA:
     st.markdown("**Metric suspects (top KPIs by peak anomaly score)**")
     if metric_hints:
@@ -272,7 +281,7 @@ with cA:
         else:
             st.caption(f"Based on entity `{entity_for_rca}` (no overlapping incident found)")
     else:
-        st.info("No metric contribution file found or no KPIs available for this entity/incident.")
+        st.info("No metric KPI suspects available for this entity/incident (missing incident_contrib file).")
 
 with cB:
     st.markdown("**Trace suspects (top services by peak anomaly score)**")
@@ -292,7 +301,7 @@ metrics = load_metrics(day) if show_metric_plots else None
 # -------------------------
 if show_trace_plots:
     if traces is None:
-        st.info("Trace KPI parquet not found for this day.")
+        st.info("Trace KPI parquet not found. In demo mode, include day_<DAY>_trace_kpis.parquet in demo_data/.")
     else:
         services = parse_top_services(str(row.get("trace_top_services_peakz", "")), topn=3)
 
@@ -322,10 +331,9 @@ if show_trace_plots:
 # -------------------------
 if show_metric_plots:
     if metrics is None:
-        st.info("Metrics parquet not found for this day.")
+        st.info("Metrics parquet not found. In demo mode, include day_<DAY>_metrics.parquet in demo_data/.")
     else:
         st.subheader("Metric overlays (entity KPIs)")
-
         ent = row.get("metric_matched_entity")
         if not isinstance(ent, str) or not ent.strip():
             ent = row.get("name", "")
@@ -335,7 +343,6 @@ if show_metric_plots:
         w1 = ev_e + pd.Timedelta(minutes=30)
 
         ent_df = metrics[(metrics["entity"] == ent) & (metrics["timestamp"] >= w0) & (metrics["timestamp"] <= w1)].copy()
-
         if len(ent_df) == 0:
             st.info(f"No metrics found for entity `{ent}` in this window.")
         else:
@@ -351,4 +358,4 @@ if show_metric_plots:
                 for k in top_kpis:
                     plot_metric_overlay(metrics, ent, k, ev_s, ev_e, f"{ent} — {k}")
 
-st.caption("Tip: Use filters in the sidebar. If plots feel slow, reduce the time window (e.g., 15 minutes).")
+st.caption("Tip: For Streamlit Cloud deployment, commit a small demo_data/ bundle (one day) with the required CSV/Parquet artifacts.")
