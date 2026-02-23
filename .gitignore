@@ -20,3 +20,5 @@ venv/
 
 # logs
 *.log
+!demo_data/
+!demo_data/**
