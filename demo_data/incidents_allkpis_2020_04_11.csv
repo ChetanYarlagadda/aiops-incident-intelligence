@@ -1,0 +1,389 @@
+incident_id,entity,incident_start,incident_end,duration_min,num_signals,top_signals_peakz
+db_001_1,db_001,2020-04-11 00:07:00,2020-04-11 06:01:00,354.0,18,New_Tbs_Free_Gb:17798894231.37; Logic_Read_Per_Sec:63819.38; Redo_Per_Sec:24855.00; Exec_Per_Sec:597.80; LFParaWrite_Per_Sec:152.21
+db_002_1,db_002,2020-04-11 00:07:00,2020-04-11 00:11:00,4.0,3,Logic_Read_Per_Sec:54.66; LFParaWrite_Per_Sec:4.72; LFSync_Per_Sec:3.60
+db_003_1,db_003,2020-04-11 00:07:00,2020-04-11 01:09:00,62.0,20,New_Tbs_Free_Gb:14239115383.47; Redo_Per_Sec:3665.05; Logic_Read_Per_Sec:661.58; DbTime:250.54; Session_pct:246.57
+db_005_1,db_005,2020-04-11 00:07:00,2020-04-11 00:10:00,3.0,5,Logic_Read_Per_Sec:68.31; Exec_Per_Sec:65.08; MEM_Used:13.79; TPS_Per_Sec:7.46; Call_Per_Sec:7.25
+db_006_1,db_006,2020-04-11 00:07:00,2020-04-11 06:01:00,354.0,13,New_Tbs_Free_Gb:4449723557.84; Logic_Read_Per_Sec:222.90; SeqRead_Per_Sec:102.12; Exec_Per_Sec:76.44; LFParaWrite_Per_Sec:51.94
+db_007_1,db_007,2020-04-11 00:07:00,2020-04-11 02:39:00,152.0,18,Logic_Read_Per_Sec:343.08; Session_pct:303.53; Redo_Per_Sec:229.16; Login_Per_Sec:94.43; DbTime:91.39
+db_008_1,db_008,2020-04-11 00:07:00,2020-04-11 05:59:00,352.0,17,Redo_Per_Sec:121254.17; Logic_Read_Per_Sec:4210.44; Exec_Per_Sec:2285.21; Physical_Read_Per_Sec:1121.36; LFParaWrite_Per_Sec:215.17
+db_009_1,db_009,2020-04-11 00:07:00,2020-04-11 01:11:00,64.0,15,Physical_Read_Per_Sec:4784.73; Logic_Read_Per_Sec:982.49; Redo_Per_Sec:435.69; CPU_free_pct:43.72; CPU_Used_Pct:31.42
+db_010_1,db_010,2020-04-11 00:07:00,2020-04-11 01:19:00,72.0,18,Redo_Per_Sec:501.17; Logic_Read_Per_Sec:435.77; DbTime:99.72; Session_pct:76.72; Exec_Per_Sec:71.50
+db_011_1,db_011,2020-04-11 00:07:00,2020-04-11 06:01:00,354.0,18,Redo_Per_Sec:62039.42; Logic_Read_Per_Sec:2363.67; Call_Per_Sec:892.36; LFParaWrite_Per_Sec:881.57; LFSync_Per_Sec:554.10
+db_012_1,db_012,2020-04-11 00:07:00,2020-04-11 01:22:00,75.0,20,Physical_Read_Per_Sec:1684.90; DbTime:769.60; Logic_Read_Per_Sec:665.54; SeqRead_Per_Sec:402.00; Session_pct:232.37
+db_013_1,db_013,2020-04-11 00:07:00,2020-04-11 05:59:00,352.0,17,New_Tbs_Free_Gb:8899447115.68; Redo_Per_Sec:7887.03; Call_Per_Sec:520.04; DFParaWrite_Per_Sec:201.68; DbTime:134.73
+docker_003_1,docker_003,2020-04-11 00:07:00,2020-04-11 00:09:00,2.0,1,container_cpu_used:6.48
+os_007_1,os_007,2020-04-11 00:07:00,2020-04-11 06:01:00,354.0,23,CPU_iowait_time:3748.20; Disk_wr_kbs:1006.39; Disk_avgqu_sz:166.26; Send_total:142.99; Outgoing_network_traffic:66.94
+os_012_1,os_012,2020-04-11 00:07:00,2020-04-11 06:01:00,354.0,28,Outgoing_network_traffic:132.09; Disk_io_util:83.52; Disk_await:69.91; Recv_total:49.53; Send_total:47.48
+os_013_1,os_013,2020-04-11 00:07:00,2020-04-11 00:44:00,37.0,14,Processor_load_1_min:20.23; Disk_await:7.66; Disk_svctm:7.49; FS_max_avail:6.75; Memory_available:6.15
+os_015_1,os_015,2020-04-11 00:07:00,2020-04-11 02:37:00,150.0,21,Disk_avgqu_sz:148.85; Incoming_network_traffic:58.24; CPU_iowait_time:42.52; Disk_wr_kbs:26.61; CPU_user_time:15.79
+os_017_1,os_017,2020-04-11 00:07:00,2020-04-11 02:30:00,143.0,31,CPU_iowait_time:13139.93; FS_used_pct:315.05; FS_used_space:289.38; Disk_svctm:48.65; Outgoing_network_traffic:18.96
+os_019_1,os_019,2020-04-11 00:07:00,2020-04-11 01:48:00,101.0,27,FS_used_pct:147.67; FS_used_space:144.37; CPU_iowait_time:82.25; Received_packets:20.36; FS_max_avail:19.32
+os_021_1,os_021,2020-04-11 00:07:00,2020-04-11 03:14:00,187.0,32,CPU_iowait_time:4571.78; Disk_avgqu_sz:1972.30; Disk_io_util:485.92; Buffers_used:354.98; Disk_wr_kbs:110.06
+os_022_1,os_022,2020-04-11 00:07:00,2020-04-11 00:24:00,17.0,7,Num_of_running_processes:6.75; Memory_used:5.52; Page_po:4.82; Memory_available:4.72; CPU_user_time:4.01
+redis_001_1,redis_001,2020-04-11 00:07:00,2020-04-11 00:37:00,30.0,8,used_memory_rss:36.42; instantaneous_output_kbps:10.22; instantaneous_ops_per_sec:7.46; used_memory:7.40; instantaneous_input_kbps:6.58
+redis_002_1,redis_002,2020-04-11 00:07:00,2020-04-11 00:11:00,4.0,2,used_memory_rss:26.98; used_cpu_sys:5.15
+redis_006_1,redis_006,2020-04-11 00:07:00,2020-04-11 00:42:00,35.0,6,used_memory:3347.16; instantaneous_output_kbps:1316.62; used_memory_rss:73.30; instantaneous_input_kbps:43.73; mem_fragmentation_ratio:21.58
+redis_007_1,redis_007,2020-04-11 00:07:00,2020-04-11 00:13:00,6.0,1,used_memory:2876.09
+redis_009_1,redis_009,2020-04-11 00:07:00,2020-04-11 00:11:00,4.0,1,total_commands_processed:33.95
+db_004_1,db_004,2020-04-11 00:08:00,2020-04-11 00:23:00,15.0,9,Physical_Read_Per_Sec:3396.78; Redo_Per_Sec:27.34; Exec_Per_Sec:25.25; LFSync_Per_Sec:6.07; DFParaWrite_Per_Sec:4.89
+docker_002_1,docker_002,2020-04-11 00:08:00,2020-04-11 00:18:00,10.0,1,container_cpu_used:44.07
+os_002_1,os_002,2020-04-11 00:08:00,2020-04-11 05:31:00,323.0,26,CPU_iowait_time:4693.42; Disk_avgqu_sz:2967.22; Disk_io_util:1660.55; ss_total:40.47; Memory_free:35.95
+os_006_1,os_006,2020-04-11 00:08:00,2020-04-11 00:40:00,32.0,8,Cache_used:9.44; CPU_user_time:7.64; FS_used_space:6.07; CPU_idle_pct:6.06; CPU_util_pct:5.40
+os_018_1,os_018,2020-04-11 00:08:00,2020-04-11 00:21:00,13.0,7,Memory_used:9.18; CPU_iowait_time:6.41; Memory_available:5.80; Memory_available_pct:5.40; Sent_queue:5.40
+osb_001_1,osb_001,2020-04-11 00:08:00,2020-04-11 00:10:00,2.0,1,avg_time:3.87
+os_008_1,os_008,2020-04-11 00:09:00,2020-04-11 00:50:00,41.0,11,CPU_iowait_time:3748.87; Disk_wr_kbs:6.78; FS_max_avail:6.07; FS_used_pct:6.07; FS_used_space:6.07
+os_014_1,os_014,2020-04-11 00:09:00,2020-04-11 02:15:00,126.0,22,Disk_io_util:54.09; Disk_await:29.13; Incoming_network_traffic:19.77; CPU_util_pct:16.67; Processor_load_1_min:14.84
+redis_003_1,redis_003,2020-04-11 00:09:00,2020-04-11 00:13:00,4.0,4,used_memory_rss:224.61; instantaneous_input_kbps:24.30; used_memory:4.72; mem_fragmentation_ratio:4.05
+docker_004_1,docker_004,2020-04-11 00:10:00,2020-04-11 00:12:00,2.0,1,container_cpu_used:10.79
+os_003_1,os_003,2020-04-11 00:10:00,2020-04-11 05:57:00,347.0,36,Sent_queue:169.40; Disk_avgqu_sz:76.87; Page_po:62.85; CPU_user_time:46.85; Disk_wr_kbs:35.83
+os_004_1,os_004,2020-04-11 00:10:00,2020-04-11 00:25:00,15.0,20,Outgoing_network_traffic:382.52; Send_total:228.14; Disk_avgqu_sz:144.14; CPU_user_time:61.95; Disk_wr_kbs:52.88
+os_005_1,os_005,2020-04-11 00:10:00,2020-04-11 00:47:00,37.0,26,Disk_avgqu_sz:155.02; Disk_wr_kbs:137.99; Page_po:105.43; CPU_user_time:60.64; Outgoing_network_traffic:55.31
+os_010_1,os_010,2020-04-11 00:10:00,2020-04-11 02:14:00,124.0,24,Recv_total:1385.39; Incoming_network_traffic:895.83; Page_po:676.52; Disk_wr_kbs:539.25; Outgoing_network_traffic:64.18
+os_011_1,os_011,2020-04-11 00:10:00,2020-04-11 00:40:00,30.0,15,Processor_load_1_min:26.97; Page_po:10.79; Memory_free:9.55; Outgoing_network_traffic:8.94; Recv_total:7.86
+os_016_1,os_016,2020-04-11 00:10:00,2020-04-11 00:30:00,20.0,13,Processor_load_1_min:15.51; CPU_util_pct:8.41; CPU_system_time:8.11; Memory_available:7.27; CPU_user_time:7.07
+redis_010_1,redis_010,2020-04-11 00:10:00,2020-04-11 00:21:00,11.0,3,instantaneous_input_kbps:43.42; used_memory:24.07; instantaneous_output_kbps:9.44
+docker_007_1,docker_007,2020-04-11 00:11:00,2020-04-11 00:13:00,2.0,1,container_cpu_used:5.56
+redis_005_1,redis_005,2020-04-11 00:11:00,2020-04-11 00:13:00,2.0,1,used_memory_rss:110.62
+os_001_1,os_001,2020-04-11 00:12:00,2020-04-11 00:23:00,11.0,9,Processor_load_5_min:8.09; FS_used_space:6.75; FS_used_pct:6.75; Page_po:5.40; System_wait_queue_length:4.81
+redis_008_1,redis_008,2020-04-11 00:12:00,2020-04-11 00:17:00,5.0,2,total_commands_processed:39.12; used_memory:4.05
+os_009_1,os_009,2020-04-11 00:13:00,2020-04-11 00:27:00,14.0,7,CPU_iowait_time:936.88; Disk_avgqu_sz:395.54; CPU_idle_pct:7.74; Sent_queue:5.40; Processor_load_5_min:4.05
+db_005_2,db_005,2020-04-11 00:14:00,2020-04-11 02:22:00,128.0,13,Redo_Per_Sec:99901.30; Logic_Read_Per_Sec:955.95; DbTime:99.94; Exec_Per_Sec:56.23; Session_pct:40.47
+redis_012_1,redis_012,2020-04-11 00:14:00,2020-04-11 00:16:00,2.0,1,total_commands_processed:37.10
+db_002_2,db_002,2020-04-11 00:15:00,2020-04-11 00:53:00,38.0,12,Logic_Read_Per_Sec:4172.58; Redo_Per_Sec:436.46; Exec_Per_Sec:66.55; LFParaWrite_Per_Sec:31.70; LFSync_Per_Sec:30.80
+redis_004_1,redis_004,2020-04-11 00:15:00,2020-04-11 00:17:00,2.0,1,used_cpu_sys:5.40
+os_020_1,os_020,2020-04-11 00:17:00,2020-04-11 00:58:00,41.0,18,Num_of_running_processes:8.77; Memory_available:7.27; CPU_idle_pct:7.26; ss_total:7.19; CPU_iowait_time:6.48
+redis_002_2,redis_002,2020-04-11 00:18:00,2020-04-11 00:25:00,7.0,2,used_memory_rss:16.19; used_cpu_sys:4.83
+redis_005_2,redis_005,2020-04-11 00:18:00,2020-04-11 02:11:00,113.0,7,instantaneous_output_kbps:165.03; used_memory_rss:111.63; instantaneous_input_kbps:49.68; used_memory:11.76; used_cpu_user:6.74
+redis_009_2,redis_009,2020-04-11 00:18:00,2020-04-11 00:22:00,4.0,3,instantaneous_input_kbps:7.09; used_memory:4.62; instantaneous_output_kbps:4.09
+redis_011_1,redis_011,2020-04-11 00:18:00,2020-04-11 00:22:00,4.0,6,instantaneous_output_kbps:460.91; used_memory_rss:111.97; instantaneous_input_kbps:25.35; used_memory:24.67; mem_fragmentation_ratio:5.40
+docker_007_2,docker_007,2020-04-11 00:22:00,2020-04-11 00:24:00,2.0,1,container_cpu_used:4.72
+redis_003_2,redis_003,2020-04-11 00:22:00,2020-04-11 01:14:00,52.0,7,used_memory_rss:221.91; instantaneous_input_kbps:15.85; used_memory:12.54; mem_fragmentation_ratio:6.07; used_cpu_sys:6.07
+os_018_2,os_018,2020-04-11 00:26:00,2020-04-11 01:22:00,56.0,17,CPU_iowait_time:5162.62; Sent_packets:16.69; Disk_svctm:16.09; Disk_await:15.35; Outgoing_network_traffic:12.41
+db_004_2,db_004,2020-04-11 00:27:00,2020-04-11 03:10:00,163.0,16,Logic_Read_Per_Sec:9500.53; Redo_Per_Sec:8559.22; Call_Per_Sec:858.30; Exec_Per_Sec:342.44; DFParaWrite_Per_Sec:68.35
+os_001_2,os_001,2020-04-11 00:27:00,2020-04-11 01:23:00,56.0,17,Disk_avgqu_sz:3291.34; CPU_iowait_time:399.89; Disk_svctm:35.07; CPU_user_time:32.69; Memory_free:28.54
+os_022_2,os_022,2020-04-11 00:28:00,2020-04-11 01:32:00,64.0,19,Sent_queue:6097.48; Disk_io_util:1287.45; CPU_iowait_time:1035.82; Disk_avgqu_sz:399.11; Page_po:40.57
+redis_007_2,redis_007,2020-04-11 00:28:00,2020-04-11 00:35:00,7.0,4,instantaneous_output_kbps:263.50; used_memory:24.65; instantaneous_input_kbps:16.76; instantaneous_ops_per_sec:5.92
+redis_009_3,redis_009,2020-04-11 00:28:00,2020-04-11 00:37:00,9.0,5,used_memory_rss:29.51; instantaneous_input_kbps:8.80; used_memory:8.62; mem_fragmentation_ratio:6.74; instantaneous_ops_per_sec:3.71
+redis_011_2,redis_011,2020-04-11 00:28:00,2020-04-11 00:34:00,6.0,4,used_memory_rss:111.29; instantaneous_input_kbps:24.35; used_memory:8.30; mem_fragmentation_ratio:5.40
+redis_010_2,redis_010,2020-04-11 00:29:00,2020-04-11 00:34:00,5.0,2,instantaneous_input_kbps:38.88; instantaneous_output_kbps:4.05
+os_004_2,os_004,2020-04-11 00:30:00,2020-04-11 01:08:00,38.0,21,CPU_iowait_time:338.41; Sent_queue:114.67; Disk_avgqu_sz:60.75; CPU_util_pct:34.32; CPU_idle_pct:27.05
+os_009_2,os_009,2020-04-11 00:31:00,2020-04-11 00:48:00,17.0,14,CPU_iowait_time:937.56; Disk_avgqu_sz:431.79; Outgoing_network_traffic:23.76; Recv_total:7.54; CPU_user_time:6.74
+osb_001_2,osb_001,2020-04-11 00:34:00,2020-04-11 00:41:00,7.0,3,avg_time:22.54; num:3.91; succee_num:3.91
+os_016_2,os_016,2020-04-11 00:35:00,2020-04-11 00:43:00,8.0,4,Page_po:5.40; Disk_wr_kbs:4.00; ss_total:3.97; Incoming_network_traffic:3.56
+redis_002_3,redis_002,2020-04-11 00:37:00,2020-04-11 01:12:00,35.0,9,used_memory_rss:26.56; mem_fragmentation_ratio:5.40; instantaneous_input_kbps:5.24; used_cpu_user:4.86; instantaneous_ops_per_sec:4.44
+docker_003_2,docker_003,2020-04-11 00:38:00,2020-04-11 00:42:00,4.0,1,container_cpu_used:36.42
+redis_007_3,redis_007,2020-04-11 00:40:00,2020-04-11 00:43:00,3.0,2,instantaneous_input_kbps:13.48; used_memory:11.88
+redis_010_3,redis_010,2020-04-11 00:40:00,2020-04-11 01:16:00,36.0,5,instantaneous_output_kbps:54.63; instantaneous_input_kbps:53.14; used_memory:23.70; mem_fragmentation_ratio:8.77; total_commands_processed:4.99
+redis_009_4,redis_009,2020-04-11 00:43:00,2020-04-11 00:53:00,10.0,5,used_memory_rss:28.50; instantaneous_input_kbps:7.06; used_memory:5.16; instantaneous_ops_per_sec:4.70; instantaneous_output_kbps:4.02
+redis_011_3,redis_011,2020-04-11 00:43:00,2020-04-11 00:59:00,16.0,5,instantaneous_output_kbps:542.97; instantaneous_input_kbps:21.82; used_memory:12.44; mem_fragmentation_ratio:8.09; used_cpu_sys:5.40
+os_011_2,os_011,2020-04-11 00:44:00,2020-04-11 01:06:00,22.0,10,Send_total:17.04; Processor_load_1_min:16.53; Incoming_network_traffic:16.53; CPU_user_time:7.05; Processor_load_5_min:6.75
+redis_001_2,redis_001,2020-04-11 00:44:00,2020-04-11 00:53:00,9.0,5,used_memory_rss:30.52; instantaneous_output_kbps:4.82; instantaneous_input_kbps:4.60; used_memory:4.38; instantaneous_ops_per_sec:3.84
+os_006_2,os_006,2020-04-11 00:46:00,2020-04-11 00:51:00,5.0,6,Disk_avgqu_sz:13.04; Disk_wr_kbs:5.54; Memory_used:3.72; CPU_system_time:3.71; CPU_util_pct:3.64
+redis_006_2,redis_006,2020-04-11 00:46:00,2020-04-11 00:51:00,5.0,5,instantaneous_output_kbps:428.76; used_memory_rss:111.29; instantaneous_input_kbps:37.36; mem_fragmentation_ratio:8.09; used_memory:4.95
+redis_007_4,redis_007,2020-04-11 00:47:00,2020-04-11 00:51:00,4.0,4,used_memory_rss:111.29; instantaneous_input_kbps:30.37; used_memory:5.51; mem_fragmentation_ratio:4.38
+os_013_2,os_013,2020-04-11 00:48:00,2020-04-11 01:11:00,23.0,11,CPU_user_time:13.34; Disk_avgqu_sz:8.37; CPU_idle_pct:6.89; Processor_load_1_min:6.41; CPU_util_pct:5.79
+os_016_3,os_016,2020-04-11 00:50:00,2020-04-11 05:58:00,308.0,22,Disk_avgqu_sz:206.87; Page_po:80.27; Disk_wr_kbs:61.42; Outgoing_network_traffic:38.57; Incoming_network_traffic:17.35
+os_005_2,os_005,2020-04-11 00:51:00,2020-04-11 02:24:00,93.0,28,Disk_wr_kbs:52.44; Disk_svctm:37.12; Sent_queue:21.15; Disk_await:15.68; Recv_total:11.08
+redis_008_2,redis_008,2020-04-11 00:53:00,2020-04-11 01:01:00,8.0,1,used_memory:5.40
+docker_004_2,docker_004,2020-04-11 00:55:00,2020-04-11 00:57:00,2.0,1,container_cpu_used:6.07
+os_006_3,os_006,2020-04-11 00:55:00,2020-04-11 01:30:00,35.0,10,CPU_util_pct:19.25; Outgoing_network_traffic:10.12; CPU_idle_pct:10.02; Disk_wr_kbs:9.19; Processor_load_1_min:6.74
+os_008_2,os_008,2020-04-11 00:55:00,2020-04-11 01:08:00,13.0,7,Incoming_network_traffic:13.98; CPU_util_pct:7.77; Disk_avgqu_sz:4.94; CPU_user_time:4.72; Memory_free:4.35
+os_009_3,os_009,2020-04-11 00:56:00,2020-04-11 01:49:00,53.0,19,CPU_iowait_time:936.88; Sent_queue:575.52; Received_packets:24.96; Sent_packets:22.43; CPU_user_time:20.43
+redis_006_3,redis_006,2020-04-11 00:56:00,2020-04-11 02:00:00,64.0,8,used_memory:3451.08; instantaneous_output_kbps:790.51; used_memory_rss:111.97; instantaneous_input_kbps:76.53; mem_fragmentation_ratio:9.44
+db_002_3,db_002,2020-04-11 00:57:00,2020-04-11 01:22:00,25.0,14,Logic_Read_Per_Sec:97077.01; Redo_Per_Sec:34358.09; LFParaWrite_Per_Sec:153.11; Exec_Per_Sec:49.24; Session_pct:47.99
+redis_009_5,redis_009,2020-04-11 00:57:00,2020-04-11 01:20:00,23.0,6,used_memory_rss:19.56; used_memory:11.33; mem_fragmentation_ratio:6.74; total_commands_processed:6.59; used_cpu_user:5.06
+redis_007_5,redis_007,2020-04-11 00:58:00,2020-04-11 01:16:00,18.0,6,used_memory:804.92; used_memory_rss:111.29; instantaneous_input_kbps:36.59; mem_fragmentation_ratio:8.77; total_commands_processed:4.21
+docker_002_2,docker_002,2020-04-11 00:59:00,2020-04-11 01:08:00,9.0,1,container_cpu_used:65.43
+redis_001_3,redis_001,2020-04-11 00:59:00,2020-04-11 01:17:00,18.0,6,used_memory_rss:23.88; instantaneous_input_kbps:8.82; total_commands_processed:4.48; mem_fragmentation_ratio:4.05; used_memory:4.04
+redis_012_2,redis_012,2020-04-11 00:59:00,2020-04-11 01:01:00,2.0,1,used_memory:5.40
+os_020_2,os_020,2020-04-11 01:03:00,2020-04-11 01:06:00,3.0,3,Disk_avgqu_sz:4.97; Memory_free:4.01; Num_of_processes:3.76
+redis_011_4,redis_011,2020-04-11 01:04:00,2020-04-11 01:16:00,12.0,4,instantaneous_output_kbps:395.03; instantaneous_input_kbps:35.40; used_memory:12.00; total_commands_processed:4.10
+docker_004_3,docker_004,2020-04-11 01:10:00,2020-04-11 01:21:00,11.0,1,container_cpu_used:65.43
+os_020_3,os_020,2020-04-11 01:10:00,2020-04-11 01:22:00,12.0,15,FS_max_avail:3065.60; FS_used_space:421.56; FS_used_pct:321.20; CPU_util_pct:6.95; Outgoing_network_traffic:6.49
+osb_001_3,osb_001,2020-04-11 01:10:00,2020-04-11 01:15:00,5.0,3,avg_time:104.96; num:16.42; succee_num:16.42
+os_011_3,os_011,2020-04-11 01:11:00,2020-04-11 02:09:00,58.0,20,Incoming_network_traffic:151.03; Send_total:21.50; Memory_used:13.31; Memory_available:12.12; Disk_avgqu_sz:7.91
+docker_003_3,docker_003,2020-04-11 01:12:00,2020-04-11 01:22:00,10.0,1,container_cpu_used:44.52
+redis_008_3,redis_008,2020-04-11 01:12:00,2020-04-11 01:15:00,3.0,1,instantaneous_input_kbps:5.40
+os_004_3,os_004,2020-04-11 01:13:00,2020-04-11 01:25:00,12.0,6,Disk_await:22.73; Disk_wr_kbs:13.35; Disk_svctm:9.09; Memory_free:7.82; Cache_used:6.66
+db_003_2,db_003,2020-04-11 01:14:00,2020-04-11 04:09:00,175.0,22,New_Tbs_Free_Gb:14239115386.17; Physical_Read_Per_Sec:2533.20; Logic_Read_Per_Sec:2454.98; Redo_Per_Sec:317.69; Session_pct:224.72
+db_009_2,db_009,2020-04-11 01:15:00,2020-04-11 01:30:00,15.0,10,Logic_Read_Per_Sec:2732.27; Physical_Read_Per_Sec:1196.52; CPU_Used_Pct:126.18; CPU_free_pct:31.31; DbTime:24.82
+os_008_3,os_008,2020-04-11 01:15:00,2020-04-11 02:02:00,47.0,13,CPU_iowait_time:1874.44; Disk_avgqu_sz:34.40; Recv_total:11.17; CPU_system_time:8.06; Disk_wr_kbs:7.71
+redis_004_2,redis_004,2020-04-11 01:15:00,2020-04-11 01:17:00,2.0,1,instantaneous_output_kbps:3.82
+redis_002_4,redis_002,2020-04-11 01:17:00,2020-04-11 01:32:00,15.0,4,used_memory_rss:20.37; used_cpu_sys:4.14; instantaneous_ops_per_sec:3.99; total_commands_processed:3.65
+redis_003_3,redis_003,2020-04-11 01:19:00,2020-04-11 01:26:00,7.0,1,used_memory_rss:111.29
+docker_002_3,docker_002,2020-04-11 01:20:00,2020-04-11 01:25:00,5.0,1,container_cpu_used:18.04
+os_013_3,os_013,2020-04-11 01:20:00,2020-04-11 02:16:00,56.0,17,Disk_io_util:40.31; Page_po:27.65; Processor_load_1_min:16.86; CPU_user_time:14.61; CPU_idle_pct:11.37
+redis_001_4,redis_001,2020-04-11 01:21:00,2020-04-11 01:31:00,10.0,4,used_memory_rss:18.89; instantaneous_output_kbps:5.89; instantaneous_input_kbps:5.14; instantaneous_ops_per_sec:3.51
+redis_011_5,redis_011,2020-04-11 01:21:00,2020-04-11 02:24:00,63.0,8,instantaneous_output_kbps:641.45; instantaneous_input_kbps:74.40; used_memory:25.78; mem_fragmentation_ratio:8.77; instantaneous_ops_per_sec:5.40
+redis_010_4,redis_010,2020-04-11 01:22:00,2020-04-11 01:32:00,10.0,3,used_memory:24.66; instantaneous_input_kbps:22.65; instantaneous_output_kbps:5.40
+db_010_2,db_010,2020-04-11 01:23:00,2020-04-11 04:42:00,199.0,17,Redo_Per_Sec:6464.88; Logic_Read_Per_Sec:1359.27; Call_Per_Sec:576.70; Exec_Per_Sec:68.46; MEM_Used_Pct:60.92
+redis_007_6,redis_007,2020-04-11 01:24:00,2020-04-11 01:26:00,2.0,3,instantaneous_input_kbps:77.88; used_memory:11.58; mem_fragmentation_ratio:4.72
+redis_009_6,redis_009,2020-04-11 01:24:00,2020-04-11 01:38:00,14.0,4,used_memory_rss:26.64; instantaneous_input_kbps:12.15; instantaneous_output_kbps:4.18; used_memory:3.88
+db_012_2,db_012,2020-04-11 01:26:00,2020-04-11 02:21:00,55.0,14,Physical_Read_Per_Sec:858.64; SeqRead_Per_Sec:617.84; Logic_Read_Per_Sec:611.68; Exec_Per_Sec:46.68; Redo_Per_Sec:41.29
+os_018_3,os_018,2020-04-11 01:26:00,2020-04-11 01:31:00,5.0,2,Disk_avgqu_sz:6.14; Cache_used:4.14
+db_002_4,db_002,2020-04-11 01:27:00,2020-04-11 03:22:00,115.0,15,Logic_Read_Per_Sec:80793.55; Redo_Per_Sec:333.46; Call_Per_Sec:70.82; DFParaWrite_Per_Sec:56.66; DbTime:35.85
+os_001_3,os_001,2020-04-11 01:29:00,2020-04-11 01:33:00,4.0,2,CPU_user_time:7.51; System_wait_queue_length:6.07
+os_004_4,os_004,2020-04-11 01:29:00,2020-04-11 01:41:00,12.0,11,Memory_used:36.81; Recv_total:14.48; Memory_available_pct:12.14; Memory_available:5.69; Received_packets:5.15
+os_020_4,os_020,2020-04-11 01:29:00,2020-04-11 01:56:00,27.0,21,FS_max_avail:458.00; FS_used_pct:320.77; FS_used_space:320.71; CPU_idle_pct:19.33; CPU_util_pct:17.27
+docker_007_3,docker_007,2020-04-11 01:30:00,2020-04-11 01:33:00,3.0,1,container_cpu_used:7.76
+redis_003_4,redis_003,2020-04-11 01:31:00,2020-04-11 03:19:00,108.0,7,instantaneous_output_kbps:395.48; used_memory_rss:221.91; instantaneous_input_kbps:44.09; used_memory:11.65; used_cpu_user:8.09
+redis_007_7,redis_007,2020-04-11 01:31:00,2020-04-11 01:42:00,11.0,5,used_memory_rss:223.93; instantaneous_output_kbps:99.38; instantaneous_input_kbps:55.77; used_memory:11.99; mem_fragmentation_ratio:8.77
+docker_002_4,docker_002,2020-04-11 01:34:00,2020-04-11 01:48:00,14.0,1,container_cpu_used:11.06
+db_009_3,db_009,2020-04-11 01:35:00,2020-04-11 01:52:00,17.0,12,Session_pct:16.86; Exec_Per_Sec:16.73; CPU_free_pct:15.23; Call_Per_Sec:14.88; TPS_Per_Sec:14.61
+os_018_4,os_018,2020-04-11 01:35:00,2020-04-11 01:52:00,17.0,15,Recv_total:19.00; CPU_iowait_time:17.53; Incoming_network_traffic:16.58; Sent_packets:16.53; Received_packets:12.96
+redis_001_5,redis_001,2020-04-11 01:35:00,2020-04-11 01:37:00,2.0,1,instantaneous_output_kbps:3.81
+docker_003_4,docker_003,2020-04-11 01:36:00,2020-04-11 01:40:00,4.0,1,container_cpu_used:6.07
+os_022_3,os_022,2020-04-11 01:36:00,2020-04-11 02:05:00,29.0,16,Send_total:35.72; Recv_total:34.94; Sent_packets:32.56; Outgoing_network_traffic:19.08; Incoming_network_traffic:18.24
+redis_010_5,redis_010,2020-04-11 01:36:00,2020-04-11 02:04:00,28.0,4,used_memory:1363.92; instantaneous_input_kbps:38.25; instantaneous_output_kbps:19.56; total_commands_processed:6.58
+redis_002_5,redis_002,2020-04-11 01:37:00,2020-04-11 02:27:00,50.0,8,used_memory_rss:36.87; instantaneous_input_kbps:12.47; total_commands_processed:5.97; mem_fragmentation_ratio:5.40; used_cpu_sys:5.28
+os_001_4,os_001,2020-04-11 01:38:00,2020-04-11 02:24:00,46.0,18,CPU_iowait_time:937.55; Disk_avgqu_sz:112.64; Received_packets:76.37; Sent_packets:59.43; Incoming_network_traffic:27.60
+os_006_4,os_006,2020-04-11 01:38:00,2020-04-11 02:35:00,57.0,15,CPU_idle_pct:11.84; CPU_util_pct:11.44; Disk_wr_kbs:11.41; Memory_free:8.23; Memory_used:7.77
+osb_001_4,osb_001,2020-04-11 01:39:00,2020-04-11 01:46:00,7.0,3,avg_time:193.86; num:28.95; succee_num:28.95
+redis_009_7,redis_009,2020-04-11 01:43:00,2020-04-11 01:56:00,13.0,5,used_memory_rss:57.11; instantaneous_input_kbps:12.19; mem_fragmentation_ratio:7.42; used_memory:4.89; total_commands_processed:4.18
+docker_003_5,docker_003,2020-04-11 01:44:00,2020-04-11 01:48:00,4.0,1,container_cpu_used:47.21
+docker_004_4,docker_004,2020-04-11 01:44:00,2020-04-11 01:48:00,4.0,1,container_cpu_used:66.10
+docker_001_1,docker_001,2020-04-11 01:46:00,2020-04-11 01:48:00,2.0,1,container_cpu_used:3.79
+os_004_5,os_004,2020-04-11 01:46:00,2020-04-11 01:56:00,10.0,6,Sent_queue:114.67; CPU_iowait_time:112.98; Disk_avgqu_sz:29.37; CPU_idle_pct:20.62; Disk_await:7.25
+redis_001_6,redis_001,2020-04-11 01:47:00,2020-04-11 02:28:00,41.0,10,used_memory_rss:46.95; instantaneous_output_kbps:46.20; used_cpu_sys:9.11; used_memory:8.65; instantaneous_input_kbps:7.93
+redis_007_8,redis_007,2020-04-11 01:49:00,2020-04-11 04:13:00,144.0,9,used_memory:3452.77; instantaneous_output_kbps:164.80; used_memory_rss:112.64; instantaneous_input_kbps:89.52; mem_fragmentation_ratio:8.77
+docker_002_5,docker_002,2020-04-11 01:53:00,2020-04-11 01:55:00,2.0,1,container_cpu_used:12.37
+db_009_4,db_009,2020-04-11 01:56:00,2020-04-11 02:09:00,13.0,17,New_Tbs_Used_Pct:244912784610825.19; Physical_Read_Per_Sec:911.47; Logic_Read_Per_Sec:301.47; Redo_Per_Sec:198.27; MEM_Used:118.50
+os_018_5,os_018,2020-04-11 01:56:00,2020-04-11 02:01:00,5.0,1,CPU_iowait_time:10.11
+docker_003_6,docker_003,2020-04-11 01:58:00,2020-04-11 02:01:00,3.0,1,container_cpu_used:6.75
+os_019_2,os_019,2020-04-11 01:58:00,2020-04-11 04:17:00,139.0,29,Shared_memory:305.77; FS_used_space:211.84; FS_used_pct:202.70; Disk_avgqu_sz:31.62; Disk_await:18.97
+redis_009_8,redis_009,2020-04-11 02:02:00,2020-04-11 02:19:00,17.0,5,used_memory_rss:11.26; instantaneous_input_kbps:6.97; used_memory:6.45; mem_fragmentation_ratio:6.07; connected_clients:5.40
+docker_002_6,docker_002,2020-04-11 02:03:00,2020-04-11 02:10:00,7.0,1,container_cpu_used:12.82
+os_009_4,os_009,2020-04-11 02:04:00,2020-04-11 02:09:00,5.0,4,Incoming_network_traffic:29.65; Recv_total:24.96; Disk_avgqu_sz:6.90; CPU_system_time:3.77
+redis_006_4,redis_006,2020-04-11 02:04:00,2020-04-11 02:18:00,14.0,7,instantaneous_output_kbps:543.65; used_memory_rss:110.62; instantaneous_input_kbps:48.58; used_memory:12.82; mem_fragmentation_ratio:5.40
+os_004_6,os_004,2020-04-11 02:06:00,2020-04-11 02:55:00,49.0,21,CPU_iowait_time:240.33; Disk_avgqu_sz:118.90; CPU_util_pct:96.05; CPU_idle_pct:51.99; Memory_used:15.16
+os_008_4,os_008,2020-04-11 02:06:00,2020-04-11 02:42:00,36.0,13,CPU_iowait_time:1873.76; Disk_wr_kbs:13.70; Memory_free:8.26; Memory_used:7.14; CPU_idle_pct:7.06
+os_018_6,os_018,2020-04-11 02:06:00,2020-04-11 03:10:00,64.0,30,FS_used_space:69.27; FS_used_pct:63.23; CPU_iowait_time:38.34; Disk_wr_kbs:18.72; Processor_load_1_min:16.31
+redis_012_3,redis_012,2020-04-11 02:07:00,2020-04-11 02:09:00,2.0,1,instantaneous_input_kbps:5.40
+redis_010_6,redis_010,2020-04-11 02:08:00,2020-04-11 02:21:00,13.0,4,instantaneous_input_kbps:27.74; used_memory:23.74; instantaneous_ops_per_sec:4.63; used_cpu_user:3.71
+os_020_5,os_020,2020-04-11 02:09:00,2020-04-11 02:20:00,11.0,9,FS_max_avail:642.14; FS_used_space:562.25; FS_used_pct:541.58; ss_total:14.74; CPU_util_pct:7.99
+docker_007_4,docker_007,2020-04-11 02:10:00,2020-04-11 02:12:00,2.0,1,container_cpu_used:6.75
+os_022_4,os_022,2020-04-11 02:11:00,2020-04-11 02:31:00,20.0,14,Recv_total:15.00; Sent_packets:13.94; Memory_used:10.31; Send_total:9.77; Outgoing_network_traffic:9.47
+os_009_5,os_009,2020-04-11 02:13:00,2020-04-11 02:57:00,44.0,18,CPU_iowait_time:936.88; CPU_user_time:41.84; Incoming_network_traffic:35.50; Recv_total:32.75; Disk_avgqu_sz:23.07
+os_011_4,os_011,2020-04-11 02:14:00,2020-04-11 02:27:00,13.0,3,Processor_load_1_min:34.39; Send_total:15.32; Outgoing_network_traffic:4.25
+osb_001_5,osb_001,2020-04-11 02:15:00,2020-04-11 02:20:00,5.0,2,succee_num:22.54; avg_time:12.79
+db_009_5,db_009,2020-04-11 02:16:00,2020-04-11 02:31:00,15.0,10,Logic_Read_Per_Sec:120.37; LFSync_Per_Sec:21.58; DbTime:12.24; TPS_Per_Sec:11.80; CPU_free_pct:9.72
+redis_005_3,redis_005,2020-04-11 02:19:00,2020-04-11 04:42:00,143.0,9,used_memory_rss:222.59; instantaneous_output_kbps:131.98; used_memory:25.69; instantaneous_input_kbps:21.14; mem_fragmentation_ratio:7.42
+redis_012_4,redis_012,2020-04-11 02:20:00,2020-04-11 02:22:00,2.0,1,instantaneous_input_kbps:7.42
+os_013_4,os_013,2020-04-11 02:22:00,2020-04-11 02:36:00,14.0,7,CPU_user_time:7.46; Send_total:5.81; Outgoing_network_traffic:5.04; Incoming_network_traffic:4.99; ss_total:4.18
+redis_006_5,redis_006,2020-04-11 02:22:00,2020-04-11 04:44:00,142.0,9,used_memory:1754.64; instantaneous_output_kbps:691.70; instantaneous_input_kbps:120.64; used_memory_rss:111.97; mem_fragmentation_ratio:8.77
+os_020_6,os_020,2020-04-11 02:24:00,2020-04-11 06:00:00,216.0,33,FS_used_space:965.74; FS_max_avail:845.44; FS_used_pct:834.88; CPU_idle_pct:92.32; CPU_util_pct:79.11
+docker_002_7,docker_002,2020-04-11 02:25:00,2020-04-11 02:27:00,2.0,1,container_cpu_used:5.40
+redis_010_7,redis_010,2020-04-11 02:25:00,2020-04-11 03:23:00,58.0,6,used_memory:3351.73; instantaneous_input_kbps:28.19; instantaneous_output_kbps:19.56; total_commands_processed:9.55; used_cpu_user:5.40
+db_005_3,db_005,2020-04-11 02:26:00,2020-04-11 05:59:00,213.0,13,Redo_Per_Sec:76866.02; Logic_Read_Per_Sec:822.78; DbTime:81.50; Session_pct:62.39; Exec_Per_Sec:46.97
+db_012_3,db_012,2020-04-11 02:26:00,2020-04-11 03:33:00,67.0,20,Physical_Read_Per_Sec:857.96; Logic_Read_Per_Sec:771.31; SeqRead_Per_Sec:105.90; Call_Per_Sec:48.19; TPS_Per_Sec:37.77
+os_014_2,os_014,2020-04-11 02:26:00,2020-04-11 02:37:00,11.0,10,Processor_load_1_min:13.49; CPU_idle_pct:7.66; CPU_user_time:5.85; Processor_load_5_min:5.40; CPU_system_time:5.06
+redis_012_5,redis_012,2020-04-11 02:27:00,2020-04-11 02:30:00,3.0,2,instantaneous_input_kbps:6.74; instantaneous_output_kbps:4.04
+os_001_5,os_001,2020-04-11 02:28:00,2020-04-11 02:36:00,8.0,4,System_wait_queue_length:8.09; CPU_user_time:6.27; CPU_util_pct:4.62; Processor_load_15_min:4.05
+os_005_3,os_005,2020-04-11 02:28:00,2020-04-11 02:50:00,22.0,15,Num_of_processes:11.24; CPU_iowait_time:7.26; Disk_await:7.19; FS_max_util:6.07; Disk_avgqu_sz:5.55
+os_010_2,os_010,2020-04-11 02:30:00,2020-04-11 05:59:00,209.0,17,Memory_available_pct:474637179477.91; Incoming_network_traffic:12.31; Outgoing_network_traffic:11.11; Num_of_processes:10.21; Memory_free:8.11
+redis_009_9,redis_009,2020-04-11 02:30:00,2020-04-11 02:33:00,3.0,5,instantaneous_input_kbps:6.26; mem_fragmentation_ratio:6.07; used_memory:5.35; connected_clients:4.05; instantaneous_output_kbps:3.75
+redis_011_6,redis_011,2020-04-11 02:30:00,2020-04-11 02:33:00,3.0,2,instantaneous_input_kbps:60.16; used_memory:23.99
+redis_002_6,redis_002,2020-04-11 02:31:00,2020-04-11 03:13:00,42.0,5,used_memory_rss:74.87; total_commands_processed:13.30; instantaneous_input_kbps:6.36; mem_fragmentation_ratio:4.05; instantaneous_output_kbps:3.57
+docker_002_8,docker_002,2020-04-11 02:33:00,2020-04-11 02:35:00,2.0,1,container_cpu_used:6.07
+redis_001_7,redis_001,2020-04-11 02:33:00,2020-04-11 02:35:00,2.0,1,used_memory_rss:31.70
+os_011_5,os_011,2020-04-11 02:34:00,2020-04-11 03:46:00,72.0,17,Outgoing_network_traffic:183.75; Disk_wr_kbs:44.78; Page_po:40.81; Incoming_network_traffic:37.90; Processor_load_1_min:23.60
+redis_012_6,redis_012,2020-04-11 02:34:00,2020-04-11 02:37:00,3.0,2,instantaneous_input_kbps:9.44; instantaneous_output_kbps:3.99
+db_009_6,db_009,2020-04-11 02:35:00,2020-04-11 03:01:00,26.0,14,New_Tbs_Free_Gb:17798894230.02; Redo_Per_Sec:334.50; Logic_Read_Per_Sec:56.11; CPU_Used_Pct:25.95; CPU_free_pct:15.47
+os_017_2,os_017,2020-04-11 02:37:00,2020-04-11 03:26:00,49.0,30,FS_used_space:375.47; FS_used_pct:309.71; Disk_avgqu_sz:58.88; Memory_used:38.74; Memory_available:26.50
+redis_009_10,redis_009,2020-04-11 02:37:00,2020-04-11 02:52:00,15.0,3,used_memory_rss:28.50; used_memory:4.50; instantaneous_input_kbps:3.79
+redis_011_7,redis_011,2020-04-11 02:37:00,2020-04-11 02:41:00,4.0,2,instantaneous_input_kbps:31.83; used_memory:22.64
+os_022_5,os_022,2020-04-11 02:38:00,2020-04-11 05:55:00,197.0,21,CPU_iowait_time:1080.95; Disk_avgqu_sz:473.18; Recv_total:38.52; Disk_wr_kbs:33.68; Send_total:21.81
+os_013_5,os_013,2020-04-11 02:41:00,2020-04-11 04:36:00,115.0,21,Incoming_network_traffic:293.07; Disk_wr_kbs:104.62; Page_po:77.57; Disk_io_util:40.61; Processor_load_1_min:18.88
+os_015_2,os_015,2020-04-11 02:41:00,2020-04-11 02:58:00,17.0,8,CPU_system_time:8.76; Processor_load_5_min:6.75; CPU_util_pct:5.41; CPU_user_time:5.05; CPU_idle_pct:4.06
+redis_012_7,redis_012,2020-04-11 02:41:00,2020-04-11 02:44:00,3.0,2,instantaneous_input_kbps:4.05; instantaneous_output_kbps:4.04
+os_001_6,os_001,2020-04-11 02:42:00,2020-04-11 03:26:00,44.0,17,CPU_iowait_time:44076.55; Disk_avgqu_sz:14899.43; Sent_queue:64.92; CPU_user_time:22.74; Recv_total:14.96
+db_007_2,db_007,2020-04-11 02:45:00,2020-04-11 06:01:00,196.0,17,New_Tbs_Free_Gb:44497235574.37; Redo_Per_Sec:5030.65; Logic_Read_Per_Sec:1672.89; LFSync_Per_Sec:141.50; DFParaWrite_Per_Sec:125.98
+os_006_5,os_006,2020-04-11 02:45:00,2020-04-11 02:47:00,2.0,2,FS_used_pct:6.07; FS_used_space:6.07
+docker_002_9,docker_002,2020-04-11 02:47:00,2020-04-11 02:58:00,11.0,1,container_cpu_used:66.10
+os_014_3,os_014,2020-04-11 02:47:00,2020-04-11 03:08:00,21.0,11,Disk_io_util:40.31; Recv_total:21.49; CPU_user_time:13.40; Disk_svctm:13.04; Disk_await:6.86
+redis_008_4,redis_008,2020-04-11 02:48:00,2020-04-11 02:52:00,4.0,1,used_memory:4.72
+redis_012_8,redis_012,2020-04-11 02:48:00,2020-04-11 02:52:00,4.0,2,instantaneous_input_kbps:8.77; instantaneous_output_kbps:4.04
+os_008_5,os_008,2020-04-11 02:49:00,2020-04-11 03:13:00,24.0,15,CPU_iowait_time:1873.76; Outgoing_network_traffic:19.50; CPU_util_pct:10.46; CPU_user_time:6.72; Disk_avgqu_sz:6.64
+osb_001_6,osb_001,2020-04-11 02:49:00,2020-04-11 02:56:00,7.0,3,avg_time:306.46; num:12.51; succee_num:12.51
+redis_011_8,redis_011,2020-04-11 02:49:00,2020-04-11 02:52:00,3.0,2,used_memory:22.37; instantaneous_input_kbps:14.31
+redis_001_8,redis_001,2020-04-11 02:51:00,2020-04-11 03:28:00,37.0,7,used_memory_rss:38.45; instantaneous_output_kbps:11.03; instantaneous_input_kbps:8.19; used_memory:7.16; total_commands_processed:5.84
+os_006_6,os_006,2020-04-11 02:52:00,2020-04-11 03:08:00,16.0,4,CPU_iowait_time:1875.11; Num_of_processes:6.07; Shared_memory:6.07; Recv_total:3.53
+os_005_4,os_005,2020-04-11 02:54:00,2020-04-11 02:56:00,2.0,1,Disk_wr_kbs:3.75
+redis_011_9,redis_011,2020-04-11 02:56:00,2020-04-11 03:20:00,24.0,5,used_memory:1678.18; instantaneous_input_kbps:65.99; instantaneous_output_kbps:25.13; total_commands_processed:6.64; instantaneous_ops_per_sec:6.38
+redis_009_11,redis_009,2020-04-11 02:57:00,2020-04-11 03:01:00,4.0,4,instantaneous_input_kbps:14.44; mem_fragmentation_ratio:10.12; total_commands_processed:6.20; used_memory:4.81
+redis_012_9,redis_012,2020-04-11 02:57:00,2020-04-11 03:06:00,9.0,2,instantaneous_input_kbps:4.72; instantaneous_output_kbps:4.04
+os_004_7,os_004,2020-04-11 02:59:00,2020-04-11 03:25:00,26.0,17,CPU_iowait_time:233.07; Disk_avgqu_sz:158.99; CPU_util_pct:49.22; Disk_wr_kbs:34.84; CPU_idle_pct:25.90
+os_005_5,os_005,2020-04-11 03:00:00,2020-04-11 04:14:00,74.0,27,Memory_used:19.33; Memory_available:17.51; Disk_svctm:13.73; Num_of_processes:11.24; CPU_iowait_time:9.49
+docker_006_1,docker_006,2020-04-11 03:01:00,2020-04-11 03:06:00,5.0,1,container_cpu_used:10.79
+os_009_6,os_009,2020-04-11 03:02:00,2020-04-11 03:57:00,55.0,17,CPU_iowait_time:25303.19; Disk_avgqu_sz:392.22; CPU_idle_pct:12.82; CPU_util_pct:12.82; System_wait_queue_length:8.77
+os_015_3,os_015,2020-04-11 03:02:00,2020-04-11 03:10:00,8.0,9,Page_po:38.78; Disk_wr_kbs:29.25; Disk_avgqu_sz:8.86; Shared_memory:6.07; Num_of_processes:6.07
+db_009_7,db_009,2020-04-11 03:05:00,2020-04-11 04:10:00,65.0,13,Logic_Read_Per_Sec:633.31; Redo_Per_Sec:416.99; CPU_free_pct:69.19; CPU_Used_Pct:62.14; MEM_Used_Pct:17.92
+redis_009_12,redis_009,2020-04-11 03:06:00,2020-04-11 03:16:00,10.0,4,used_memory_rss:10.45; instantaneous_input_kbps:6.63; instantaneous_output_kbps:4.65; used_cpu_sys:3.82
+docker_007_5,docker_007,2020-04-11 03:08:00,2020-04-11 03:12:00,4.0,1,container_cpu_used:7.42
+docker_002_10,docker_002,2020-04-11 03:09:00,2020-04-11 03:11:00,2.0,1,container_cpu_used:4.05
+osb_001_7,osb_001,2020-04-11 03:10:00,2020-04-11 03:12:00,2.0,2,num:3.68; succee_num:3.68
+redis_004_3,redis_004,2020-04-11 03:10:00,2020-04-11 03:12:00,2.0,1,used_cpu_user:5.40
+redis_012_10,redis_012,2020-04-11 03:10:00,2020-04-11 03:12:00,2.0,1,instantaneous_input_kbps:4.72
+docker_001_2,docker_001,2020-04-11 03:11:00,2020-04-11 03:14:00,3.0,1,container_cpu_used:4.50
+os_006_7,os_006,2020-04-11 03:13:00,2020-04-11 03:42:00,29.0,9,Memory_used:12.72; FS_used_space:8.77; Memory_available:7.10; Disk_avgqu_sz:7.01; CPU_idle_pct:6.97
+os_014_4,os_014,2020-04-11 03:13:00,2020-04-11 03:34:00,21.0,12,Disk_wr_kbs:105.35; Disk_avgqu_sz:23.10; CPU_util_pct:9.23; Disk_await:8.94; CPU_idle_pct:7.49
+db_004_3,db_004,2020-04-11 03:14:00,2020-04-11 06:01:00,167.0,18,New_Tbs_Free_Gb:8899447114.33; Logic_Read_Per_Sec:10180.21; Call_Per_Sec:843.13; Exec_Per_Sec:392.22; Redo_Per_Sec:129.55
+os_015_4,os_015,2020-04-11 03:14:00,2020-04-11 03:16:00,2.0,2,Processor_load_1_min:10.79; Send_total:3.66
+docker_002_11,docker_002,2020-04-11 03:16:00,2020-04-11 03:18:00,2.0,1,container_cpu_used:13.49
+redis_012_11,redis_012,2020-04-11 03:16:00,2020-04-11 03:28:00,12.0,2,instantaneous_output_kbps:274.52; instantaneous_input_kbps:10.79
+redis_002_7,redis_002,2020-04-11 03:17:00,2020-04-11 03:22:00,5.0,4,used_memory_rss:23.34; used_memory:9.00; mem_fragmentation_ratio:5.94; total_commands_processed:4.33
+os_018_7,os_018,2020-04-11 03:18:00,2020-04-11 04:34:00,76.0,24,Disk_wr_kbs:35.72; FS_max_avail:13.61; Disk_await:12.16; Sent_queue:11.80; Memory_available:11.02
+os_021_2,os_021,2020-04-11 03:20:00,2020-04-11 05:10:00,110.0,23,Buffers_used:136.43; Disk_wr_kbs:53.83; Page_po:39.80; Memory_used:32.36; Memory_available:26.34
+osb_001_8,osb_001,2020-04-11 03:20:00,2020-04-11 03:25:00,5.0,3,avg_time:56.65; num:10.17; succee_num:10.17
+docker_007_6,docker_007,2020-04-11 03:21:00,2020-04-11 03:27:00,6.0,1,container_cpu_used:39.80
+os_008_6,os_008,2020-04-11 03:21:00,2020-04-11 03:40:00,19.0,11,CPU_iowait_time:13118.35; Disk_wr_kbs:231.21; Disk_avgqu_sz:44.28; CPU_util_pct:9.45; CPU_system_time:7.42
+os_015_5,os_015,2020-04-11 03:21:00,2020-04-11 03:51:00,30.0,15,Incoming_network_traffic:94.82; Processor_load_5_min:7.42; CPU_user_time:7.25; Memory_used:6.46; CPU_idle_pct:6.20
+docker_002_12,docker_002,2020-04-11 03:22:00,2020-04-11 03:25:00,3.0,1,container_cpu_used:8.09
+redis_003_5,redis_003,2020-04-11 03:24:00,2020-04-11 04:41:00,77.0,7,instantaneous_output_kbps:428.53; used_memory_rss:222.59; instantaneous_input_kbps:43.26; used_memory:12.28; used_cpu_user:6.07
+redis_008_5,redis_008,2020-04-11 03:24:00,2020-04-11 03:26:00,2.0,1,total_commands_processed:4.05
+db_002_5,db_002,2020-04-11 03:26:00,2020-04-11 04:11:00,45.0,12,Logic_Read_Per_Sec:1936.33; Redo_Per_Sec:324.40; Call_Per_Sec:68.12; Exec_Per_Sec:27.65; DFParaWrite_Per_Sec:15.29
+redis_009_13,redis_009,2020-04-11 03:28:00,2020-04-11 03:45:00,17.0,4,used_memory_rss:36.65; instantaneous_input_kbps:8.92; used_cpu_sys:4.82; instantaneous_ops_per_sec:3.77
+redis_011_10,redis_011,2020-04-11 03:28:00,2020-04-11 03:31:00,3.0,2,instantaneous_input_kbps:24.72; used_memory:24.41
+os_004_8,os_004,2020-04-11 03:29:00,2020-04-11 03:36:00,7.0,4,Sent_queue:42.69; Memory_available:7.20; Memory_available_pct:6.07; Memory_used:5.18
+redis_010_8,redis_010,2020-04-11 03:29:00,2020-04-11 04:11:00,42.0,5,used_memory:2254.65; instantaneous_input_kbps:48.41; mem_fragmentation_ratio:8.77; instantaneous_output_kbps:5.73; instantaneous_ops_per_sec:3.87
+os_001_7,os_001,2020-04-11 03:32:00,2020-04-11 04:34:00,62.0,16,Disk_avgqu_sz:65.40; CPU_user_time:26.11; Memory_available:24.76; Memory_used:18.59; Sent_queue:17.63
+redis_002_8,redis_002,2020-04-11 03:32:00,2020-04-11 03:48:00,16.0,4,used_memory_rss:37.55; connected_clients:4.05; instantaneous_input_kbps:3.89; used_cpu_sys:3.88
+redis_012_12,redis_012,2020-04-11 03:32:00,2020-04-11 03:35:00,3.0,2,instantaneous_output_kbps:412.12; instantaneous_input_kbps:10.12
+docker_001_3,docker_001,2020-04-11 03:35:00,2020-04-11 03:37:00,2.0,1,container_cpu_used:4.05
+os_017_3,os_017,2020-04-11 03:35:00,2020-04-11 04:56:00,81.0,24,FS_used_pct:556.51; FS_used_space:519.62; CPU_iowait_time:47.88; Outgoing_network_traffic:15.38; Sent_packets:10.57
+redis_011_11,redis_011,2020-04-11 03:35:00,2020-04-11 03:51:00,16.0,4,instantaneous_output_kbps:164.58; instantaneous_input_kbps:52.05; used_memory:23.99; mem_fragmentation_ratio:8.09
+db_012_4,db_012,2020-04-11 03:37:00,2020-04-11 05:03:00,86.0,17,New_Tbs_Free_Gb:17798894230.02; Logic_Read_Per_Sec:1083.00; Physical_Read_Per_Sec:857.96; SeqRead_Per_Sec:90.38; Redo_Per_Sec:32.34
+redis_001_9,redis_001,2020-04-11 03:39:00,2020-04-11 03:41:00,2.0,3,used_memory:6.61; instantaneous_input_kbps:5.68; instantaneous_output_kbps:3.80
+redis_012_13,redis_012,2020-04-11 03:39:00,2020-04-11 03:49:00,10.0,2,instantaneous_output_kbps:137.26; instantaneous_input_kbps:9.44
+os_004_9,os_004,2020-04-11 03:41:00,2020-04-11 03:45:00,4.0,2,Processor_load_1_min:7.55; Disk_wr_ios:4.72
+os_014_5,os_014,2020-04-11 03:41:00,2020-04-11 03:43:00,2.0,1,CPU_system_time:4.05
+os_006_8,os_006,2020-04-11 03:46:00,2020-04-11 03:55:00,9.0,10,Disk_wr_kbs:280.87; Disk_avgqu_sz:109.08; CPU_util_pct:6.27; CPU_idle_pct:6.25; Num_of_processes:6.07
+os_008_7,os_008,2020-04-11 03:46:00,2020-04-11 05:40:00,114.0,17,CPU_iowait_time:3748.20; CPU_util_pct:13.52; CPU_user_time:10.76; CPU_system_time:9.43; CPU_idle_pct:7.44
+redis_001_10,redis_001,2020-04-11 03:46:00,2020-04-11 04:16:00,30.0,8,used_memory_rss:9.63; instantaneous_input_kbps:6.11; instantaneous_ops_per_sec:5.44; instantaneous_output_kbps:4.40; used_cpu_sys:4.36
+os_004_10,os_004,2020-04-11 03:49:00,2020-04-11 04:14:00,25.0,17,CPU_iowait_time:183.59; Disk_avgqu_sz:91.23; CPU_idle_pct:51.91; CPU_util_pct:41.47; Sent_queue:33.20
+redis_009_14,redis_009,2020-04-11 03:49:00,2020-04-11 03:51:00,2.0,2,used_memory_rss:55.14; used_cpu_sys:7.42
+os_014_6,os_014,2020-04-11 03:50:00,2020-04-11 04:08:00,18.0,9,Processor_load_1_min:27.65; CPU_user_time:8.98; CPU_system_time:8.05; CPU_util_pct:4.92; Disk_avgqu_sz:4.60
+os_011_6,os_011,2020-04-11 03:53:00,2020-04-11 04:06:00,13.0,8,Processor_load_1_min:9.78; Memory_available:8.96; Disk_wr_kbs:8.18; Outgoing_network_traffic:6.91; Recv_total:5.47
+redis_012_14,redis_012,2020-04-11 03:53:00,2020-04-11 03:56:00,3.0,2,instantaneous_input_kbps:10.12; instantaneous_output_kbps:7.46
+osb_001_9,osb_001,2020-04-11 03:55:00,2020-04-11 04:00:00,5.0,3,avg_time:679.96; succee_num:7.34; num:7.32
+redis_009_15,redis_009,2020-04-11 03:55:00,2020-04-11 04:10:00,15.0,7,instantaneous_input_kbps:13.56; mem_fragmentation_ratio:10.12; used_memory:8.91; used_cpu_sys:4.63; connected_clients:4.05
+os_015_6,os_015,2020-04-11 03:57:00,2020-04-11 04:38:00,41.0,15,Incoming_network_traffic:116.35; Disk_avgqu_sz:112.71; CPU_user_time:10.57; Outgoing_network_traffic:8.63; CPU_idle_pct:6.43
+redis_002_9,redis_002,2020-04-11 03:58:00,2020-04-11 04:07:00,9.0,5,used_memory_rss:27.49; used_cpu_sys:7.27; used_memory:6.15; mem_fragmentation_ratio:5.17; instantaneous_output_kbps:3.76
+redis_011_12,redis_011,2020-04-11 03:59:00,2020-04-11 04:46:00,47.0,6,instantaneous_output_kbps:66.55; instantaneous_input_kbps:50.62; used_memory:26.65; mem_fragmentation_ratio:9.44; used_cpu_user:4.05
+os_006_9,os_006,2020-04-11 04:00:00,2020-04-11 05:11:00,71.0,14,CPU_iowait_time:3748.87; Disk_avgqu_sz:74.94; CPU_idle_pct:11.82; System_wait_queue_length:8.77; CPU_util_pct:7.43
+redis_012_15,redis_012,2020-04-11 04:00:00,2020-04-11 04:04:00,4.0,2,instantaneous_input_kbps:4.72; instantaneous_output_kbps:4.04
+docker_002_13,docker_002,2020-04-11 04:01:00,2020-04-11 04:03:00,2.0,1,container_cpu_used:6.07
+os_009_7,os_009,2020-04-11 04:03:00,2020-04-11 04:46:00,43.0,16,Disk_avgqu_sz:1778.90; CPU_iowait_time:128.16; Received_packets:21.92; CPU_idle_pct:21.32; CPU_util_pct:12.46
+redis_004_4,redis_004,2020-04-11 04:03:00,2020-04-11 04:05:00,2.0,1,instantaneous_output_kbps:66.98
+redis_012_16,redis_012,2020-04-11 04:08:00,2020-04-11 04:17:00,9.0,2,instantaneous_output_kbps:9.43; instantaneous_input_kbps:3.71
+redis_002_10,redis_002,2020-04-11 04:11:00,2020-04-11 04:25:00,14.0,3,used_memory_rss:37.10; used_memory:6.61; used_cpu_user:4.05
+redis_004_5,redis_004,2020-04-11 04:11:00,2020-04-11 04:14:00,3.0,2,instantaneous_output_kbps:67.66; used_memory:4.05
+db_003_3,db_003,2020-04-11 04:14:00,2020-04-11 05:19:00,65.0,21,Logic_Read_Per_Sec:509.87; Session_pct:237.28; DbTime:232.48; Sess_Active:167.95; Exec_Per_Sec:133.07
+db_009_8,db_009,2020-04-11 04:14:00,2020-04-11 05:11:00,57.0,14,Logic_Read_Per_Sec:313.38; Redo_Per_Sec:214.19; Call_Per_Sec:45.53; Exec_Per_Sec:36.82; DbTime:23.61
+os_011_7,os_011,2020-04-11 04:14:00,2020-04-11 04:51:00,37.0,12,Processor_load_1_min:23.60; Send_total:13.41; Disk_wr_kbs:8.35; Outgoing_network_traffic:7.09; CPU_iowait_time:5.75
+db_002_6,db_002,2020-04-11 04:15:00,2020-04-11 05:59:00,104.0,16,Logic_Read_Per_Sec:57937.21; Redo_Per_Sec:825.60; MEM_Used_Pct:37.82; Call_Per_Sec:34.06; Exec_Per_Sec:33.39
+redis_009_16,redis_009,2020-04-11 04:15:00,2020-04-11 04:30:00,15.0,5,used_memory_rss:50.36; instantaneous_input_kbps:10.35; used_memory:5.49; instantaneous_output_kbps:4.05; used_cpu_sys:3.82
+redis_010_9,redis_010,2020-04-11 04:17:00,2020-04-11 04:35:00,18.0,3,used_memory:2303.21; instantaneous_input_kbps:26.79; instantaneous_output_kbps:9.11
+os_004_11,os_004,2020-04-11 04:18:00,2020-04-11 05:01:00,43.0,24,Outgoing_network_traffic:112.56; Disk_wr_kbs:85.57; Send_total:81.70; Disk_avgqu_sz:79.98; CPU_user_time:55.93
+os_005_6,os_005,2020-04-11 04:18:00,2020-04-11 05:59:00,101.0,33,Disk_avgqu_sz:155.97; Page_po:144.03; Disk_wr_kbs:126.41; Incoming_network_traffic:50.38; CPU_user_time:36.98
+os_014_7,os_014,2020-04-11 04:18:00,2020-04-11 04:21:00,3.0,1,Disk_avgqu_sz:5.31
+redis_007_9,redis_007,2020-04-11 04:19:00,2020-04-11 04:21:00,2.0,3,instantaneous_input_kbps:33.97; used_memory:24.40; mem_fragmentation_ratio:7.42
+redis_012_17,redis_012,2020-04-11 04:21:00,2020-04-11 04:23:00,2.0,1,instantaneous_output_kbps:3.72
+os_019_3,os_019,2020-04-11 04:23:00,2020-04-11 05:13:00,50.0,24,FS_used_pct:281.48; FS_used_space:233.28; Outgoing_network_traffic:19.11; CPU_iowait_time:13.50; Incoming_network_traffic:12.29
+redis_001_11,redis_001,2020-04-11 04:23:00,2020-04-11 04:25:00,2.0,2,instantaneous_input_kbps:4.16; instantaneous_output_kbps:3.64
+redis_007_10,redis_007,2020-04-11 04:25:00,2020-04-11 04:36:00,11.0,4,used_memory:3534.79; instantaneous_input_kbps:35.26; mem_fragmentation_ratio:8.09; total_commands_processed:7.21
+os_014_8,os_014,2020-04-11 04:27:00,2020-04-11 04:29:00,2.0,1,CPU_iowait_time:6.40
+redis_001_12,redis_001,2020-04-11 04:29:00,2020-04-11 05:20:00,51.0,8,used_memory_rss:37.77; instantaneous_output_kbps:16.54; instantaneous_input_kbps:10.62; used_memory:9.18; mem_fragmentation_ratio:6.74
+redis_002_11,redis_002,2020-04-11 04:29:00,2020-04-11 04:31:00,2.0,1,total_commands_processed:6.48
+docker_007_7,docker_007,2020-04-11 04:30:00,2020-04-11 04:40:00,10.0,1,container_cpu_used:8.09
+osb_001_10,osb_001,2020-04-11 04:31:00,2020-04-11 04:33:00,2.0,2,num:3.68; succee_num:3.68
+redis_012_18,redis_012,2020-04-11 04:35:00,2020-04-11 04:37:00,2.0,1,instantaneous_input_kbps:4.27
+redis_008_6,redis_008,2020-04-11 04:36:00,2020-04-11 04:38:00,2.0,1,instantaneous_input_kbps:5.40
+redis_002_12,redis_002,2020-04-11 04:37:00,2020-04-11 04:46:00,9.0,3,used_memory_rss:27.91; mem_fragmentation_ratio:4.38; used_memory:4.16
+redis_009_17,redis_009,2020-04-11 04:37:00,2020-04-11 04:41:00,4.0,1,used_memory_rss:11.67
+os_018_8,os_018,2020-04-11 04:38:00,2020-04-11 05:18:00,40.0,20,Sent_packets:22.98; Received_packets:20.43; Send_total:13.11; CPU_iowait_time:12.15; Recv_total:11.45
+osb_001_11,osb_001,2020-04-11 04:39:00,2020-04-11 04:45:00,6.0,3,avg_time:162.37; num:9.72; succee_num:9.72
+os_001_8,os_001,2020-04-11 04:40:00,2020-04-11 05:15:00,35.0,14,CPU_iowait_time:1876.46; Disk_avgqu_sz:20.84; CPU_user_time:9.37; Outgoing_network_traffic:6.62; FS_used_pct:6.07
+os_014_9,os_014,2020-04-11 04:40:00,2020-04-11 05:08:00,28.0,15,Disk_avgqu_sz:156.64; Incoming_network_traffic:21.78; CPU_user_time:14.71; CPU_system_time:8.07; CPU_idle_pct:6.86
+os_013_6,os_013,2020-04-11 04:41:00,2020-04-11 04:48:00,7.0,3,Disk_wr_kbs:12.39; Processor_load_1_min:6.07; Send_total:3.97
+os_015_7,os_015,2020-04-11 04:42:00,2020-04-11 04:45:00,3.0,1,Incoming_network_traffic:55.70
+redis_004_6,redis_004,2020-04-11 04:42:00,2020-04-11 04:44:00,2.0,1,instantaneous_output_kbps:5.05
+redis_010_10,redis_010,2020-04-11 04:42:00,2020-04-11 04:50:00,8.0,4,instantaneous_input_kbps:36.73; used_memory:23.47; instantaneous_output_kbps:11.24; mem_fragmentation_ratio:8.09
+docker_004_5,docker_004,2020-04-11 04:45:00,2020-04-11 04:47:00,2.0,1,container_cpu_used:6.07
+redis_003_6,redis_003,2020-04-11 04:46:00,2020-04-11 05:03:00,17.0,2,used_memory_rss:224.61; used_memory:6.53
+redis_005_4,redis_005,2020-04-11 04:46:00,2020-04-11 05:28:00,42.0,6,instantaneous_output_kbps:296.33; used_memory_rss:112.64; used_memory:26.22; instantaneous_input_kbps:19.41; mem_fragmentation_ratio:6.07
+redis_007_11,redis_007,2020-04-11 04:46:00,2020-04-11 04:59:00,13.0,3,instantaneous_input_kbps:22.24; used_cpu_sys:5.40; used_cpu_user:4.05
+db_010_3,db_010,2020-04-11 04:47:00,2020-04-11 05:29:00,42.0,12,Redo_Per_Sec:3452.66; Logic_Read_Per_Sec:589.45; DbTime:35.07; LFSync_Per_Sec:28.67; Exec_Per_Sec:24.28
+redis_004_7,redis_004,2020-04-11 04:49:00,2020-04-11 04:51:00,2.0,1,instantaneous_output_kbps:5.05
+redis_006_6,redis_006,2020-04-11 04:49:00,2020-04-11 05:27:00,38.0,7,used_memory:1398.18; instantaneous_output_kbps:329.38; used_memory_rss:111.29; instantaneous_input_kbps:39.20; mem_fragmentation_ratio:9.44
+os_009_8,os_009,2020-04-11 04:50:00,2020-04-11 05:59:00,69.0,19,CPU_iowait_time:937.56; Disk_avgqu_sz:44.92; Buffers_used:21.58; Disk_wr_kbs:11.94; Send_total:10.08
+redis_011_13,redis_011,2020-04-11 04:51:00,2020-04-11 05:20:00,29.0,6,instantaneous_output_kbps:65.88; instantaneous_input_kbps:33.26; used_memory:24.16; mem_fragmentation_ratio:8.77; used_cpu_sys:8.09
+docker_002_14,docker_002,2020-04-11 04:52:00,2020-04-11 05:02:00,10.0,1,container_cpu_used:22.26
+os_013_7,os_013,2020-04-11 04:52:00,2020-04-11 05:57:00,65.0,19,Disk_io_util:40.62; Memory_free:27.28; CPU_user_time:20.35; Memory_available:19.35; CPU_util_pct:18.93
+os_015_8,os_015,2020-04-11 04:52:00,2020-04-11 05:01:00,9.0,5,CPU_idle_pct:8.52; CPU_system_time:8.06; Send_total:4.15; Memory_free:3.74; CPU_user_time:3.72
+redis_009_18,redis_009,2020-04-11 04:53:00,2020-04-11 04:55:00,2.0,4,instantaneous_input_kbps:9.38; used_memory_rss:9.38; used_memory:6.20; instantaneous_output_kbps:4.21
+redis_010_11,redis_010,2020-04-11 04:54:00,2020-04-11 05:57:00,63.0,8,used_memory:2255.31; instantaneous_input_kbps:33.03; instantaneous_output_kbps:10.12; mem_fragmentation_ratio:9.44; total_commands_processed:8.18
+os_011_8,os_011,2020-04-11 04:55:00,2020-04-11 05:02:00,7.0,8,Memory_available:15.52; Memory_used:11.09; CPU_user_time:9.37; Page_po:6.75; Send_total:4.15
+redis_002_13,redis_002,2020-04-11 04:56:00,2020-04-11 04:59:00,3.0,1,used_memory_rss:16.77
+docker_001_4,docker_001,2020-04-11 05:00:00,2020-04-11 05:03:00,3.0,1,container_cpu_used:5.10
+redis_009_19,redis_009,2020-04-11 05:00:00,2020-04-11 05:29:00,29.0,6,used_memory_rss:12.29; instantaneous_input_kbps:8.61; instantaneous_output_kbps:5.62; mem_fragmentation_ratio:5.40; used_memory:4.90
+os_017_4,os_017,2020-04-11 05:02:00,2020-04-11 06:00:00,58.0,23,CPU_iowait_time:4693.17; FS_used_pct:703.50; FS_used_space:613.79; Sent_packets:46.83; Received_packets:36.96
+osb_001_12,osb_001,2020-04-11 05:04:00,2020-04-11 05:10:00,6.0,3,avg_time:303.36; succee_num:10.97; num:10.83
+redis_002_14,redis_002,2020-04-11 05:04:00,2020-04-11 05:22:00,18.0,5,used_memory_rss:74.64; total_commands_processed:6.37; instantaneous_input_kbps:4.66; instantaneous_ops_per_sec:3.77; used_memory:3.77
+os_015_9,os_015,2020-04-11 05:05:00,2020-04-11 06:01:00,56.0,16,Incoming_network_traffic:72.02; CPU_user_time:28.29; Send_total:18.96; Sent_packets:13.49; Disk_wr_kbs:8.35
+os_011_9,os_011,2020-04-11 05:06:00,2020-04-11 05:41:00,35.0,11,Send_total:14.14; Disk_avgqu_sz:8.39; CPU_iowait_time:7.85; Disk_wr_kbs:6.51; System_wait_queue_length:6.07
+db_012_5,db_012,2020-04-11 05:07:00,2020-04-11 05:20:00,13.0,10,Physical_Read_Per_Sec:844.47; Logic_Read_Per_Sec:506.79; DbTime:20.57; Exec_Per_Sec:14.07; SeqRead_Per_Sec:11.02
+os_004_12,os_004,2020-04-11 05:07:00,2020-04-11 05:38:00,31.0,10,Send_total:11.51; Memory_used:10.43; Disk_svctm:8.84; Recv_total:6.44; Processor_load_1_min:6.07
+redis_003_7,redis_003,2020-04-11 05:07:00,2020-04-11 05:41:00,34.0,4,instantaneous_output_kbps:264.40; used_memory_rss:221.91; mem_fragmentation_ratio:8.77; used_memory:5.09
+redis_007_12,redis_007,2020-04-11 05:07:00,2020-04-11 05:09:00,2.0,2,instantaneous_ops_per_sec:5.76; instantaneous_input_kbps:5.60
+docker_002_15,docker_002,2020-04-11 05:09:00,2020-04-11 05:11:00,2.0,1,container_cpu_used:4.55
+redis_004_8,redis_004,2020-04-11 05:11:00,2020-04-11 05:13:00,2.0,1,instantaneous_input_kbps:4.05
+redis_007_13,redis_007,2020-04-11 05:13:00,2020-04-11 05:26:00,13.0,5,used_memory_rss:109.94; instantaneous_input_kbps:69.31; used_memory:22.36; total_commands_processed:5.91; mem_fragmentation_ratio:4.72
+os_021_3,os_021,2020-04-11 05:16:00,2020-04-11 05:18:00,2.0,1,Memory_available:4.08
+db_009_9,db_009,2020-04-11 05:17:00,2020-04-11 05:22:00,5.0,6,Logic_Read_Per_Sec:45.16; CPU_free_pct:26.47; CPU_Used_Pct:22.51; DbTime:8.94; Redo_Per_Sec:8.31
+os_006_10,os_006,2020-04-11 05:18:00,2020-04-11 05:43:00,25.0,10,CPU_iowait_time:1875.11; CPU_system_time:10.08; CPU_idle_pct:7.22; Memory_available:6.38; FS_used_pct:6.07
+os_014_10,os_014,2020-04-11 05:18:00,2020-04-11 06:01:00,43.0,14,Incoming_network_traffic:123.13; Disk_avgqu_sz:77.22; Disk_await:27.48; Processor_load_1_min:9.44; Memory_free:8.06
+os_019_4,os_019,2020-04-11 05:20:00,2020-04-11 06:01:00,41.0,23,CPU_iowait_time:17.53; Disk_await:17.30; Memory_available:16.98; Received_packets:15.64; Outgoing_network_traffic:12.56
+os_018_9,os_018,2020-04-11 05:22:00,2020-04-11 06:01:00,39.0,20,FS_used_space:39.55; FS_used_pct:36.72; Sent_packets:26.85; Received_packets:22.64; Disk_svctm:20.26
+os_001_9,os_001,2020-04-11 05:23:00,2020-04-11 05:27:00,4.0,6,CPU_user_time:40.24; CPU_util_pct:16.94; CPU_idle_pct:13.99; FS_max_avail:6.07; FS_used_pct:6.07
+os_021_4,os_021,2020-04-11 05:23:00,2020-04-11 05:25:00,2.0,1,Disk_wr_kbs:5.57
+db_003_4,db_003,2020-04-11 05:24:00,2020-04-11 06:01:00,37.0,22,New_Tbs_Free_Gb:7119557692.41; Physical_Read_Per_Sec:1195.52; Redo_Per_Sec:152.57; Logic_Read_Per_Sec:67.66; Exec_Per_Sec:61.41
+docker_001_5,docker_001,2020-04-11 05:24:00,2020-04-11 05:29:00,5.0,1,container_cpu_used:10.56
+redis_001_13,redis_001,2020-04-11 05:24:00,2020-04-11 05:26:00,2.0,2,used_memory_rss:44.38; instantaneous_input_kbps:8.83
+redis_011_14,redis_011,2020-04-11 05:24:00,2020-04-11 05:29:00,5.0,2,instantaneous_input_kbps:33.84; used_memory:25.57
+db_009_10,db_009,2020-04-11 05:27:00,2020-04-11 05:29:00,2.0,6,Logic_Read_Per_Sec:68.73; CPU_free_pct:59.95; CPU_Used_Pct:37.52; Session_pct:15.51; DbTime:12.25
+db_012_6,db_012,2020-04-11 05:27:00,2020-04-11 05:53:00,26.0,11,New_Tbs_Free_Gb:17798894228.67; Physical_Read_Per_Sec:843.80; Logic_Read_Per_Sec:770.15; SeqRead_Per_Sec:64.75; DbTime:40.47
+docker_007_8,docker_007,2020-04-11 05:29:00,2020-04-11 05:31:00,2.0,1,container_cpu_used:4.30
+os_021_5,os_021,2020-04-11 05:29:00,2020-04-11 05:59:00,30.0,13,Buffers_used:744.20; Incoming_network_traffic:8.72; Sent_packets:8.09; Recv_total:7.88; ss_total:6.07
+redis_002_15,redis_002,2020-04-11 05:31:00,2020-04-11 05:46:00,15.0,2,used_memory_rss:31.80; total_commands_processed:4.20
+redis_006_7,redis_006,2020-04-11 05:31:00,2020-04-11 05:58:00,27.0,5,instantaneous_output_kbps:560.73; used_memory_rss:111.97; instantaneous_input_kbps:34.52; used_memory:26.68; mem_fragmentation_ratio:8.77
+redis_007_14,redis_007,2020-04-11 05:31:00,2020-04-11 05:35:00,4.0,5,instantaneous_output_kbps:297.23; used_memory_rss:111.29; instantaneous_input_kbps:52.24; used_memory:13.00; mem_fragmentation_ratio:5.40
+os_001_10,os_001,2020-04-11 05:33:00,2020-04-11 05:46:00,13.0,8,Outgoing_network_traffic:10.86; Incoming_network_traffic:6.74; CPU_user_time:6.13; Recv_total:5.46; CPU_idle_pct:5.18
+redis_001_14,redis_001,2020-04-11 05:33:00,2020-04-11 06:01:00,28.0,7,used_memory_rss:24.01; instantaneous_input_kbps:11.65; instantaneous_output_kbps:7.22; mem_fragmentation_ratio:6.74; instantaneous_ops_per_sec:5.06
+db_010_4,db_010,2020-04-11 05:34:00,2020-04-11 06:01:00,27.0,10,Logic_Read_Per_Sec:1568.68; DbTime:32.38; MEM_Used_Pct:32.25; Redo_Per_Sec:28.37; LFSync_Per_Sec:10.12
+redis_005_5,redis_005,2020-04-11 05:34:00,2020-04-11 06:01:00,27.0,5,used_memory_rss:221.91; instantaneous_input_kbps:24.36; used_memory:21.94; mem_fragmentation_ratio:6.75; total_commands_processed:3.53
+db_009_11,db_009,2020-04-11 05:35:00,2020-04-11 06:01:00,26.0,14,Redo_Per_Sec:2497.59; Logic_Read_Per_Sec:1009.19; Exec_Per_Sec:207.70; CPU_free_pct:93.68; Session_pct:71.83
+redis_011_15,redis_011,2020-04-11 05:35:00,2020-04-11 05:42:00,7.0,4,instantaneous_output_kbps:98.70; instantaneous_input_kbps:58.16; used_memory:23.71; mem_fragmentation_ratio:8.77
+redis_008_7,redis_008,2020-04-11 05:37:00,2020-04-11 05:39:00,2.0,1,instantaneous_input_kbps:3.71
+redis_009_20,redis_009,2020-04-11 05:37:00,2020-04-11 05:42:00,5.0,2,used_memory_rss:16.67; instantaneous_input_kbps:5.90
+redis_004_9,redis_004,2020-04-11 05:38:00,2020-04-11 05:40:00,2.0,1,instantaneous_input_kbps:4.05
+os_002_2,os_002,2020-04-11 05:41:00,2020-04-11 06:01:00,20.0,11,CPU_iowait_time:608.22; Memory_used:15.94; Disk_avgqu_sz:13.17; Memory_available:10.34; ss_total:9.11
+os_004_13,os_004,2020-04-11 05:43:00,2020-04-11 05:46:00,3.0,8,CPU_iowait_time:111.75; Disk_avgqu_sz:63.43; CPU_util_pct:13.58; CPU_idle_pct:13.20; FS_used_space:5.36
+osb_001_13,osb_001,2020-04-11 05:44:00,2020-04-11 05:51:00,7.0,3,avg_time:29.69; succee_num:17.00; num:4.59
+redis_007_15,redis_007,2020-04-11 05:44:00,2020-04-11 06:01:00,17.0,5,instantaneous_output_kbps:263.50; instantaneous_input_kbps:116.79; used_memory:11.99; mem_fragmentation_ratio:10.12; used_cpu_sys:8.77
+redis_003_8,redis_003,2020-04-11 05:46:00,2020-04-11 05:57:00,11.0,5,used_memory_rss:223.26; instantaneous_input_kbps:35.43; instantaneous_ops_per_sec:4.64; used_memory:4.09; mem_fragmentation_ratio:4.05
+redis_008_8,redis_008,2020-04-11 05:47:00,2020-04-11 05:49:00,2.0,1,instantaneous_input_kbps:3.71
+redis_009_21,redis_009,2020-04-11 05:47:00,2020-04-11 05:50:00,3.0,2,instantaneous_input_kbps:6.27; mem_fragmentation_ratio:4.72
+redis_011_16,redis_011,2020-04-11 05:47:00,2020-04-11 05:58:00,11.0,4,instantaneous_output_kbps:33.50; instantaneous_input_kbps:32.84; used_memory:25.56; used_cpu_user:4.05
+os_008_8,os_008,2020-04-11 05:48:00,2020-04-11 05:51:00,3.0,2,CPU_iowait_time:1874.44; Memory_used:4.11
+redis_012_19,redis_012,2020-04-11 05:48:00,2020-04-11 05:50:00,2.0,1,used_memory:4.72
+docker_001_6,docker_001,2020-04-11 05:49:00,2020-04-11 05:51:00,2.0,1,container_cpu_used:6.07
+redis_002_16,redis_002,2020-04-11 05:51:00,2020-04-11 05:59:00,8.0,2,used_memory_rss:71.27; mem_fragmentation_ratio:4.38
+os_011_10,os_011,2020-04-11 05:52:00,2020-04-11 06:00:00,8.0,6,CPU_user_time:11.08; Memory_available:5.36; CPU_idle_pct:4.57; Disk_wr_kbs:4.18; Memory_used:3.92
+docker_004_6,docker_004,2020-04-11 05:53:00,2020-04-11 06:01:00,8.0,1,container_cpu_used:48.56
+os_001_11,os_001,2020-04-11 05:53:00,2020-04-11 06:01:00,8.0,7,Disk_avgqu_sz:111.29; Memory_available:8.26; FS_max_avail:6.07; FS_used_space:6.07; FS_used_pct:6.07
+os_004_14,os_004,2020-04-11 05:54:00,2020-04-11 05:59:00,5.0,5,Send_total:19.46; Disk_await:6.46; Processor_load_5_min:4.05; Disk_avgqu_sz:4.05; Recv_total:3.75
+os_008_9,os_008,2020-04-11 05:56:00,2020-04-11 06:01:00,5.0,2,CPU_idle_pct:4.50; CPU_util_pct:4.49
+redis_009_22,redis_009,2020-04-11 05:56:00,2020-04-11 06:01:00,5.0,3,instantaneous_input_kbps:8.34; used_cpu_sys:5.01; instantaneous_ops_per_sec:4.17
+db_012_7,db_012,2020-04-11 05:57:00,2020-04-11 05:59:00,2.0,3,Logic_Read_Per_Sec:774.44; DbTime:13.71; Session_pct:3.71
+os_006_11,os_006,2020-04-11 05:57:00,2020-04-11 06:01:00,4.0,2,CPU_system_time:6.07; Memory_available:3.97

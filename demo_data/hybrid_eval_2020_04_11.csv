@@ -1,0 +1,15 @@
+failure_index,fault_description,name,container,event_start,event_end,metric_detected,metric_matched_entity,metric_incident_start,metric_delay_min,metric_lead_min,trace_detected,trace_top_services_peakz,trace_top_peak_z,hybrid_detected
+1,CPU fault,docker_003,container_001,2020-04-11 00:05:00,2020-04-11 00:10:00,True,docker_003,2020-04-11 00:07:00,2.0,0.0,False,,,True
+2,network delay,docker_002,container_001,2020-04-11 00:35:00,2020-04-11 00:40:00,False,,,,,True,local_method_006:17.80; local_method_010:17.40; csf_001:16.65; local_method_004:16.49; osb_001:16.19,17.799305555556753,True
+3,network delay,docker_001,container_001,2020-04-11 01:10:00,2020-04-11 01:15:00,False,,,,,True,csf_005:36.85; osb_001:35.32; csf_001:34.45; local_method_004:17.23; local_method_006:16.19,36.8522272727285,True
+4,CPU fault,docker_004,container_001,2020-04-11 01:40:00,2020-04-11 01:45:00,True,docker_004,2020-04-11 01:44:00,4.0,0.0,False,,,True
+5,db connection limit,db_007,,2020-04-11 02:15:00,2020-04-11 02:20:00,True,db_007,2020-04-11 00:07:00,0.0,128.0,False,,,True
+5,db connection limit,db_007,,2020-04-11 02:15:00,2020-04-11 02:20:00,True,db_007,2020-04-11 00:07:00,0.0,128.0,False,,,True
+5,db connection limit,db_007,,2020-04-11 02:15:00,2020-04-11 02:20:00,True,db_007,2020-04-11 00:07:00,0.0,128.0,False,,,True
+6,CPU fault,docker_002,container_001,2020-04-11 02:50:00,2020-04-11 02:55:00,True,docker_002,2020-04-11 02:47:00,0.0,3.0,False,,,True
+7,network delay,docker_003,container_001,2020-04-11 03:20:00,2020-04-11 03:25:00,False,,,,,True,local_method_009:17.87; csf_001:12.48; osb_001:11.95; local_method_005:11.29; csf_005:10.02,17.867886792453735,True
+8,network loss,docker_003,container_001,2020-04-11 03:55:00,2020-04-11 04:00:00,False,,,,,True,local_method_004:12.33; local_method_009:10.12; local_method_006:9.36; local_method_005:7.05; osb_001:6.65,12.327375000000156,True
+9,CPU fault,docker_008,container_002,2020-04-11 04:40:00,2020-04-11 04:45:00,False,,,,,False,,,False
+10,network loss,docker_007,container_002,2020-04-11 05:05:00,2020-04-11 05:10:00,False,,,,,True,csf_004:418.03; csf_003:397.59; csf_005:253.43; csf_002:90.41; osb_001:56.43,418.0312941176359,True
+11,db  close,db_003,,2020-04-11 05:45:00,2020-04-11 05:50:00,True,db_003,2020-04-11 05:24:00,0.0,21.0,False,,,True
+11,db  close,db_003,,2020-04-11 05:45:00,2020-04-11 05:50:00,True,db_003,2020-04-11 05:24:00,0.0,21.0,False,,,True
