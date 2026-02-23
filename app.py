@@ -15,7 +15,8 @@ REPORTS = PROJ / "outputs" / "reports"
 PROC = PROJ / "data" / "processed"
 
 DEMO = PROJ / "demo_data"
-USE_DEMO = (DEMO / "hybrid_eval_2020_04_11.csv").exists() or any(DEMO.glob("hybrid_eval_v2_*.csv"))
+USE_DEMO = DEMO.exists() and any(DEMO.glob("hybrid_eval_2020_04_11.csv"))
+
 
 
 BASE_REPORTS = DEMO if USE_DEMO else REPORTS
