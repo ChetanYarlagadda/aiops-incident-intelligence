@@ -1,0 +1,97 @@
+from __future__ import annotations
+import json
+import zipfile
+from pathlib import Path
+import pandas as pd
+
+
+def read_csv_robust(path: Path) -> pd.DataFrame:
+    # Try common encodings for CN datasets
+    for enc in ["utf-8-sig", "utf-8", "gb18030", "gbk"]:
+        try:
+            return pd.read_csv(path, encoding=enc)
+        except Exception:
+            continue
+    # Last resort: let pandas guess, ignoring bad chars
+    return pd.read_csv(path, encoding="utf-8", errors="ignore")
+
+
+def main():
+    DATA_ROOT = Path(r"C:/Users/ychet/Desktop/Project/AIOps/AIOps挑战赛数据")  # <-- change this
+
+    if not DATA_ROOT.exists():
+        raise FileNotFoundError(f"DATA_ROOT not found: {DATA_ROOT}")
+
+    # 1) Locate failure CSV (故障整理（预赛）.csv)
+    failure_candidates = list(DATA_ROOT.rglob("*.csv"))
+    failure_csv = None
+    for p in failure_candidates:
+        if "故障" in p.name or "failure" in p.name.lower():
+            failure_csv = p
+            break
+
+    # 2) Locate day ZIPs (2020_*_*.zip)
+    day_zips = sorted(DATA_ROOT.rglob("2020_*_*.zip"))
+
+    print("\n=== FOUND FILES ===")
+    print("DATA_ROOT:", DATA_ROOT)
+    print("Failure CSV:", failure_csv)
+    print("Day ZIP count:", len(day_zips))
+    if day_zips:
+        print("First 5 ZIPs:")
+        for z in day_zips[:5]:
+            print(" -", z)
+
+    manifest = {
+        "data_root": str(DATA_ROOT),
+        "failure_csv": str(failure_csv) if failure_csv else None,
+        "day_zips": [str(z) for z in day_zips[:200]],  # cap for huge lists
+    }
+
+    # 3) Inspect failure CSV schema
+    if failure_csv:
+        df_fail = read_csv_robust(failure_csv)
+        print("\n=== FAILURE CSV SAMPLE ===")
+        print("Columns:", list(df_fail.columns))
+        print(df_fail.head(5).to_string(index=False))
+        print("\nRow count:", len(df_fail))
+        manifest["failure_columns"] = list(df_fail.columns)
+
+    # 4) Peek inside one ZIP to learn folder/file structure
+    if day_zips:
+        sample_zip = day_zips[0]
+        print("\n=== ZIP CONTENT PREVIEW ===")
+        with zipfile.ZipFile(sample_zip, "r") as zf:
+            names = zf.namelist()
+            # Show top-level folders (first path component)
+            top = sorted({n.split("/")[0] for n in names if "/" in n})
+            print("Sample ZIP:", sample_zip.name)
+            print("Top-level entries:", top[:20])
+            print("Total files in ZIP:", len(names))
+
+            # show a few paths that include the key folders if present
+            keywords = ["业务指标", "平台指标", "调用链指标"]
+            for k in keywords:
+                hits = [n for n in names if k in n][:5]
+                print(f"\nExample paths for '{k}':")
+                for h in hits:
+                    print("  ", h)
+
+        # OPTIONAL: Extract that one zip (comment in if you want)
+        extract_dir = DATA_ROOT / "extracted" / sample_zip.stem
+        extract_dir.mkdir(parents=True, exist_ok=True)
+        # WARNING: can be large. Extract only if you have space.
+        # with zipfile.ZipFile(sample_zip, "r") as zf:
+        #     zf.extractall(extract_dir)
+        # print("\nExtracted to:", extract_dir)
+
+        manifest["sample_zip"] = str(sample_zip)
+
+    # Save manifest
+    out = DATA_ROOT / "manifest_aiops2020.json"
+    out.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+    print("\nSaved manifest:", out)
+
+
+if __name__ == "__main__":
+    main()

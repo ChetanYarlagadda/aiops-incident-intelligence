@@ -1,0 +1,22 @@
+# data + outputs (big)
+data/raw/
+data/processed/
+outputs/
+__pycache__/
+*.pyc
+
+# local env
+.venv/
+venv/
+.env
+.DS_Store
+
+# notebooks checkpoints
+.ipynb_checkpoints/
+
+# parquet/csv generated
+*.parquet
+*.csv
+
+# logs
+*.log
